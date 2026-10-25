@@ -1,0 +1,64 @@
+name: 更新节点
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 每 6 小时看一眼。离上次发布不满 36 小时就结束，满了才重新测、再提交。
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-nodes
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 看看是不是该更新了
+        id: gate
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ ! -s updated_at.txt ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if ! last=$(date -u -d "$(head -n 1 updated_at.txt)" +%s); then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          now=$(date -u +%s)
+          delta=$((now - last))
+          if [ "$delta" -ge 129600 ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "距离上次更新 ${delta} 秒，还没到 36 小时"
+          fi
+
+      - name: 拉取并测试
+        if: steps.gate.outputs.run == 'true'
+        run: python3 scripts/update.py
+
+      - name: 提交
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "ANDY202301S"
+          git config user.email "176704606+ANDY202301S@users.noreply.github.com"
+          git add clash.yaml v2ray.txt updated_at.txt
+          if git diff --cached --quiet; then
+            echo "订阅没有变化"
+            exit 0
+          fi
+          git -c commit.gpgsign=false commit --no-verify -m "更新节点"
+          git push origin HEAD:main
