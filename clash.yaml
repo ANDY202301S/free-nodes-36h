@@ -1,0 +1,384 @@
+#profile-title: 免费节点
+#profile-update-interval: 36
+#profile-web-page-url: https://github.com/ANDY202301S/free-nodes-36h
+# 公开节点，不保证一直能用
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+proxies:
+  - name: "🇭🇰 香港 01"
+    type: "vmess"
+    server: "47.243.65.243"
+    port: 443
+    udp: true
+    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
+    alterId: 0
+    cipher: "auto"
+    tls: true
+    network: "ws"
+    servername: "lcv8v9l7oyamxxfz.v.3dns.vip"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "lcv8v9l7oyamxxfz.v.3dns.vip"
+  - name: "🇭🇰 香港 02"
+    type: "vmess"
+    server: "47.243.65.243"
+    port: 443
+    udp: true
+    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
+    alterId: 0
+    cipher: "auto"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "lcv8v9l7oyamxxfz.v.3dns.vip"
+  - name: "🇲🇾 马来西亚 01"
+    type: "vless"
+    server: "216.173.67.59"
+    port: 443
+    udp: true
+    uuid: "d342d11e-d224-4463-b982-532309285094"
+    network: "ws"
+    tls: true
+    servername: "ccc.010304.xyz"
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "ccc.010304.xyz"
+  - name: "🇩🇪 德国 01"
+    type: "vless"
+    server: "45.128.78.176"
+    port: 443
+    udp: true
+    uuid: "680e92ac-1688-49e0-af96-7327fbc30ce8"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "ozon.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+  - name: "🇳🇱 荷兰 01"
+    type: "vless"
+    server: "213.152.165.201"
+    port: 2095
+    udp: true
+    uuid: "b38712cb-e4aa-4462-b7e3-df20508d2b39"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI"
+      short-id: "3869d49a9a79e06a"
+  - name: "🇳🇱 荷兰 02"
+    type: "vless"
+    server: "213.152.165.200"
+    port: 2095
+    udp: true
+    uuid: "b38712cb-e4aa-4462-b7e3-df20508d2b39"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI"
+      short-id: "3869d49a9a79e06a"
+  - name: "🇺🇸 美国 01"
+    type: "vless"
+    server: "germanylanzrestik.site"
+    port: 443
+    udp: true
+    uuid: "50a87e21-f0e2-4b53-a787-91adfe748f63"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "germanylanzrestik.site"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "aHxzHc7w0r_8X8mdx1XCyg2ooRLjcOQMOuscdAQPrEo"
+  - name: "🇬🇧 英国 01"
+    type: "vless"
+    server: "51.89.231.124"
+    port: 8443
+    udp: true
+    uuid: "680e92ac-1688-49e0-af96-7327fbc30ce8"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "ozon.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+  - name: "🇬🇧 英国 02"
+    type: "vless"
+    server: "195.72.166.251"
+    port: 443
+    udp: true
+    uuid: "64c05afc-ce81-4ba0-b697-afa04da1427e"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "www.lloydsbankinggroup.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "RKDT6fVgcZS8Qfzhv5rbeHRIflA3UTKD_HNLJyOoUwk"
+      short-id: "25349b36802f"
+  - name: "🇬🇧 英国 03"
+    type: "vless"
+    server: "54.37.5.203"
+    port: 8443
+    udp: true
+    uuid: "8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "ozon.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+  - name: "🇺🇸 美国 02"
+    type: "vless"
+    server: "germanylanzrestik.site"
+    port: 443
+    udp: true
+    uuid: "50a87e21-f0e2-4b53-a787-91adfe748f63"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "germanylanzrestik.site"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "aHxzHc7w0r_8X8mdx1XCyg2ooRLjcOQMOuscdAQPrEo"
+  - name: "🇵🇹 葡萄牙 01"
+    type: "vless"
+    server: "198.16.113.220"
+    port: 8443
+    udp: true
+    uuid: "98a24806-141a-43d3-b094-bd66c4eb93b8"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE"
+      short-id: "69984b9e02545831"
+  - name: "🇫🇷 法国 01"
+    type: "vless"
+    server: "edge.bookmai.com"
+    port: 443
+    udp: true
+    uuid: "b9bfa54d-bc44-4592-a6d6-89a9665d286f"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "mother-earth.fyi"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+  - name: "🇫🇷 法国 02"
+    type: "vless"
+    server: "163.245.42.48"
+    port: 443
+    udp: true
+    uuid: "b9bfa54d-bc44-4592-a6d6-89a9665d286f"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "mother-earth.fyi"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+  - name: "🇫🇷 法国 03"
+    type: "vless"
+    server: "103.91.147.255"
+    port: 443
+    udp: true
+    uuid: "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "abuse.ozon.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+  - name: "🇷🇺 俄罗斯 01"
+    type: "vless"
+    server: "147.45.47.89"
+    port: 443
+    udp: true
+    uuid: "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "ozon.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+  - name: "🇷🇺 俄罗斯 02"
+    type: "vless"
+    server: "193.160.140.119"
+    port: 443
+    udp: true
+    uuid: "680e92ac-1688-49e0-af96-7327fbc30ce8"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "ozon.ru"
+    client-fingerprint: "ios"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+  - name: "🇷🇺 俄罗斯 03"
+    type: "vless"
+    server: "45.151.71.148"
+    port: 443
+    udp: true
+    uuid: "680e92ac-1688-49e0-af96-7327fbc30ce8"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "gb.ozon.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+  - name: "🇷🇺 俄罗斯 04"
+    type: "vless"
+    server: "113.30.154.207"
+    port: 8443
+    udp: true
+    uuid: "ca926603-c678-4639-b726-a5b82d7e110c"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "apple.com"
+    client-fingerprint: "ios"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+  - name: "🇷🇺 俄罗斯 05"
+    type: "vless"
+    server: "113.30.154.207"
+    port: 8443
+    udp: true
+    uuid: "ca926603-c678-4639-b726-a5b82d7e110c"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "apple.com"
+    client-fingerprint: "ios"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+  - name: "🇷🇺 俄罗斯 06"
+    type: "vless"
+    server: "45.151.71.142"
+    port: 443
+    udp: true
+    uuid: "8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "gb.ozon.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+  - name: "🇷🇺 俄罗斯 07"
+    type: "vless"
+    server: "45.144.221.169"
+    port: 443
+    udp: true
+    uuid: "30572b57-f5ab-4eb8-82d4-a24d399b99f6"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "arizona.eosapp.net"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU"
+  - name: "🇷🇺 俄罗斯 08"
+    type: "vless"
+    server: "109.73.192.248"
+    port: 443
+    udp: true
+    uuid: "30572b57-f5ab-4eb8-82d4-a24d399b99f6"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "almata.vkusnews.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU"
+  - name: "🇰🇷 韩国 01"
+    type: "ss"
+    server: "43.201.148.241"
+    port: 2096
+    udp: true
+    cipher: "chacha20-ietf-poly1305"
+    password: "bf5129f1-31f5-4edf-a07a-27ec31b26c1d"
+proxy-groups:
+  - name: "选择"
+    type: "select"
+    proxies:
+      - "自动"
+      - "🇭🇰 香港 01"
+      - "🇭🇰 香港 02"
+      - "🇲🇾 马来西亚 01"
+      - "🇩🇪 德国 01"
+      - "🇳🇱 荷兰 01"
+      - "🇳🇱 荷兰 02"
+      - "🇺🇸 美国 01"
+      - "🇬🇧 英国 01"
+      - "🇬🇧 英国 02"
+      - "🇬🇧 英国 03"
+      - "🇺🇸 美国 02"
+      - "🇵🇹 葡萄牙 01"
+      - "🇫🇷 法国 01"
+      - "🇫🇷 法国 02"
+      - "🇫🇷 法国 03"
+      - "🇷🇺 俄罗斯 01"
+      - "🇷🇺 俄罗斯 02"
+      - "🇷🇺 俄罗斯 03"
+      - "🇷🇺 俄罗斯 04"
+      - "🇷🇺 俄罗斯 05"
+      - "🇷🇺 俄罗斯 06"
+      - "🇷🇺 俄罗斯 07"
+      - "🇷🇺 俄罗斯 08"
+      - "🇰🇷 韩国 01"
+  - name: "自动"
+    type: "url-test"
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 80
+    proxies:
+      - "🇭🇰 香港 01"
+      - "🇭🇰 香港 02"
+      - "🇲🇾 马来西亚 01"
+      - "🇩🇪 德国 01"
+      - "🇳🇱 荷兰 01"
+      - "🇳🇱 荷兰 02"
+      - "🇺🇸 美国 01"
+      - "🇬🇧 英国 01"
+      - "🇬🇧 英国 02"
+      - "🇬🇧 英国 03"
+      - "🇺🇸 美国 02"
+      - "🇵🇹 葡萄牙 01"
+      - "🇫🇷 法国 01"
+      - "🇫🇷 法国 02"
+      - "🇫🇷 法国 03"
+      - "🇷🇺 俄罗斯 01"
+      - "🇷🇺 俄罗斯 02"
+      - "🇷🇺 俄罗斯 03"
+      - "🇷🇺 俄罗斯 04"
+      - "🇷🇺 俄罗斯 05"
+      - "🇷🇺 俄罗斯 06"
+      - "🇷🇺 俄罗斯 07"
+      - "🇷🇺 俄罗斯 08"
+      - "🇰🇷 韩国 01"
+rules:
+  - "MATCH,选择"
