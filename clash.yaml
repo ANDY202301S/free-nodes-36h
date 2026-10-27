@@ -8,35 +8,33 @@ mode: rule
 log-level: info
 ipv6: false
 proxies:
-  - name: "🇭🇰 香港 01"
-    type: "vmess"
-    server: "47.243.65.243"
+  - name: "🇸🇬 新加坡 01"
+    type: "vless"
+    server: "43.174.193.1"
     port: 443
     udp: true
-    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
-    alterId: 0
-    cipher: "auto"
-    tls: true
+    uuid: "d342d11e-d224-4463-b982-532309285094"
     network: "ws"
-    servername: "lcv8v9l7oyamxxfz.v.3dns.vip"
+    tls: true
+    servername: "ccc.010304.xyz"
     ws-opts:
-      path: "/ws-vmess"
+      path: "/fp=chrome"
       headers:
-        Host: "lcv8v9l7oyamxxfz.v.3dns.vip"
-  - name: "🇭🇰 香港 02"
-    type: "vmess"
-    server: "47.243.65.243"
+        Host: "ccc.010304.xyz"
+  - name: "🇹🇭 泰国 01"
+    type: "vless"
+    server: "45.154.26.63"
     port: 443
     udp: true
-    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
-    alterId: 0
-    cipher: "auto"
+    uuid: "ff85e702-b605-4109-884d-2c1f065d0954"
+    network: "tcp"
     tls: true
-    network: "ws"
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: "lcv8v9l7oyamxxfz.v.3dns.vip"
+    flow: "xtls-rprx-vision"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk"
+      short-id: "3c032a7e"
   - name: "🇲🇾 马来西亚 01"
     type: "vless"
     server: "216.173.67.59"
@@ -50,127 +48,28 @@ proxies:
       path: "/fp=chrome"
       headers:
         Host: "ccc.010304.xyz"
-  - name: "🇩🇪 德国 01"
-    type: "vless"
-    server: "45.128.78.176"
-    port: 443
-    udp: true
-    uuid: "680e92ac-1688-49e0-af96-7327fbc30ce8"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "ozon.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇳🇱 荷兰 01"
-    type: "vless"
-    server: "213.152.165.201"
-    port: 2095
-    udp: true
-    uuid: "b38712cb-e4aa-4462-b7e3-df20508d2b39"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI"
-      short-id: "3869d49a9a79e06a"
-  - name: "🇳🇱 荷兰 02"
-    type: "vless"
-    server: "213.152.165.200"
-    port: 2095
-    udp: true
-    uuid: "b38712cb-e4aa-4462-b7e3-df20508d2b39"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI"
-      short-id: "3869d49a9a79e06a"
   - name: "🇺🇸 美国 01"
-    type: "vless"
-    server: "germanylanzrestik.site"
+    type: "hysteria2"
+    server: "promo3.betust.net"
     port: 443
     udp: true
-    uuid: "50a87e21-f0e2-4b53-a787-91adfe748f63"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "germanylanzrestik.site"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "aHxzHc7w0r_8X8mdx1XCyg2ooRLjcOQMOuscdAQPrEo"
-  - name: "🇬🇧 英国 01"
-    type: "vless"
-    server: "51.89.231.124"
-    port: 8443
-    udp: true
-    uuid: "680e92ac-1688-49e0-af96-7327fbc30ce8"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "ozon.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇬🇧 英国 02"
-    type: "vless"
-    server: "195.72.166.251"
-    port: 443
-    udp: true
-    uuid: "64c05afc-ce81-4ba0-b697-afa04da1427e"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "www.lloydsbankinggroup.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "RKDT6fVgcZS8Qfzhv5rbeHRIflA3UTKD_HNLJyOoUwk"
-      short-id: "25349b36802f"
-  - name: "🇬🇧 英国 03"
-    type: "vless"
-    server: "54.37.5.203"
-    port: 8443
-    udp: true
-    uuid: "8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "ozon.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    password: "94c2b91777f8de3a5bc12d2a91b732c2"
+    skip-cert-verify: true
+    sni: "promo3.betust.net"
   - name: "🇺🇸 美国 02"
     type: "vless"
-    server: "germanylanzrestik.site"
-    port: 443
-    udp: true
-    uuid: "50a87e21-f0e2-4b53-a787-91adfe748f63"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "germanylanzrestik.site"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "aHxzHc7w0r_8X8mdx1XCyg2ooRLjcOQMOuscdAQPrEo"
-  - name: "🇵🇹 葡萄牙 01"
-    type: "vless"
-    server: "198.16.113.220"
+    server: "177.7.51.29"
     port: 8443
     udp: true
-    uuid: "98a24806-141a-43d3-b094-bd66c4eb93b8"
+    uuid: "c6b1b2d0-ed5e-48ce-99e6-112ff330030d"
     network: "tcp"
     tls: true
     flow: "xtls-rprx-vision"
     servername: "www.apple.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE"
-      short-id: "69984b9e02545831"
+      public-key: "laG5BxoSbdRozpauATNFBPPTwhuDuu0JFl_SCP2ZQlU"
+      short-id: "14fbf992"
   - name: "🇫🇷 法国 01"
     type: "vless"
     server: "edge.bookmai.com"
@@ -197,9 +96,89 @@ proxies:
     client-fingerprint: "chrome"
     reality-opts:
       public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇫🇷 法国 03"
+  - name: "🇦🇹 奥地利 01"
+    type: "trojan"
+    server: "212.183.88.136"
+    port: 443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.calmlunch.com"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇺🇸 美国 03"
+    type: "trojan"
+    server: "165.215.250.14"
+    port: 443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇳🇱 荷兰 01"
     type: "vless"
-    server: "103.91.147.255"
+    server: "2.27.118.10"
+    port: 443
+    udp: true
+    uuid: "d9fe2431-8351-41eb-b956-75d96dec5d4a"
+    network: "tcp"
+    tls: true
+    servername: "ph-nl-s3784.cybercat.network"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "goey7Sc4Xm6Nvdukb_DuoUnrkPSV0p4hPWbAmk2_AHc"
+      short-id: "ecf1d9f7caa6ba67"
+  - name: "🇳🇱 荷兰 02"
+    type: "hysteria2"
+    server: "130.49.161.70"
+    port: 443
+    udp: true
+    password: "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR"
+    skip-cert-verify: true
+    sni: "hy2.aspidnet.xyz"
+    obfs: "salamander"
+    obfs-password: "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+  - name: "🇺🇸 美国 04"
+    type: "hysteria2"
+    server: "forshynewh.duckdns.org"
+    port: 443
+    udp: true
+    password: "329e13e4-ee7c-4802-ac72-5fcab79c2402"
+    skip-cert-verify: true
+    sni: "forshynewh.duckdns.org"
+  - name: "🇩🇪 德国 01"
+    type: "vless"
+    server: "ge-s-1.pythonmakemigreat.wiki"
+    port: 443
+    udp: true
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "ge-s-1.pythonmakemigreat.wiki"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8"
+      short-id: "2c9a2790ad5900b2"
+  - name: "🇩🇪 德国 02"
+    type: "hysteria2"
+    server: "162.249.125.133"
+    port: 443
+    udp: true
+    password: "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s"
+    skip-cert-verify: true
+    sni: "hy2-new.aspidnet.xyz"
+    obfs: "salamander"
+    obfs-password: "c1b4086fea89914496c7e10967a419216566"
+  - name: "🇷🇺 俄罗斯 01"
+    type: "vless"
+    server: "193.160.141.27"
     port: 443
     udp: true
     uuid: "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87"
@@ -207,178 +186,127 @@ proxies:
     tls: true
     flow: "xtls-rprx-vision"
     servername: "abuse.ozon.ru"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇷🇺 俄罗斯 01"
+  - name: "🇹🇷 土耳其 01"
     type: "vless"
-    server: "147.45.47.89"
+    server: "tr2.tv-quoralyx.top"
     port: 443
     udp: true
-    uuid: "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87"
+    uuid: "4b1be712-774c-4b65-8491-a3339e124a70"
     network: "tcp"
     tls: true
     flow: "xtls-rprx-vision"
-    servername: "ozon.ru"
+    servername: "tr2.tv-quoralyx.top"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      public-key: "w0yEuw7sPMCEwk9_vDVoqjBhJsGoPvR7TsxIZVJy3iw"
+      short-id: "f4b2a12c"
   - name: "🇷🇺 俄罗斯 02"
     type: "vless"
-    server: "193.160.140.119"
+    server: "94.228.167.12"
     port: 443
     udp: true
-    uuid: "680e92ac-1688-49e0-af96-7327fbc30ce8"
+    uuid: "37ca5f34-2531-4fda-a781-20f3845fea88"
     network: "tcp"
     tls: true
     flow: "xtls-rprx-vision"
-    servername: "ozon.ru"
-    client-fingerprint: "ios"
+    servername: "washingphonicseatable.solsticedigest.me"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      public-key: "dCaQHVtwEPBeiH3ivVU9ycGJZ8uCO2JaIVjYBnfaTWY"
+      short-id: "c13c9bd7bd45847d"
   - name: "🇷🇺 俄罗斯 03"
     type: "vless"
-    server: "45.151.71.148"
+    server: "178.250.157.231"
     port: 443
     udp: true
-    uuid: "680e92ac-1688-49e0-af96-7327fbc30ce8"
+    uuid: "37ca5f34-2531-4fda-a781-20f3845fea88"
     network: "tcp"
     tls: true
     flow: "xtls-rprx-vision"
-    servername: "gb.ozon.ru"
-    client-fingerprint: "firefox"
+    servername: "lifeskaterstudent.caskstudio.org"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇷🇺 俄罗斯 04"
+      public-key: "pObQ7F063LsHc_lDuUfzPnx83C-goIPyyffMZs1CG0U"
+      short-id: "c9e5505275320b51"
+  - name: "🇫🇮 芬兰 01"
     type: "vless"
-    server: "113.30.154.207"
-    port: 8443
-    udp: true
-    uuid: "ca926603-c678-4639-b726-a5b82d7e110c"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "apple.com"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇷🇺 俄罗斯 05"
-    type: "vless"
-    server: "113.30.154.207"
-    port: 8443
-    udp: true
-    uuid: "ca926603-c678-4639-b726-a5b82d7e110c"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "apple.com"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇷🇺 俄罗斯 06"
-    type: "vless"
-    server: "45.151.71.142"
-    port: 443
-    udp: true
-    uuid: "8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "gb.ozon.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇷🇺 俄罗斯 07"
-    type: "vless"
-    server: "45.144.221.169"
+    server: "31.76.89.226"
     port: 443
     udp: true
     uuid: "30572b57-f5ab-4eb8-82d4-a24d399b99f6"
     network: "tcp"
     tls: true
     flow: "xtls-rprx-vision"
-    servername: "arizona.eosapp.net"
+    servername: "ai.eosshop.net"
     client-fingerprint: "chrome"
     reality-opts:
       public-key: "Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU"
-  - name: "🇷🇺 俄罗斯 08"
+  - name: "🇫🇮 芬兰 02"
     type: "vless"
-    server: "109.73.192.248"
+    server: "31.76.89.226"
     port: 443
     udp: true
     uuid: "30572b57-f5ab-4eb8-82d4-a24d399b99f6"
     network: "tcp"
     tls: true
     flow: "xtls-rprx-vision"
-    servername: "almata.vkusnews.com"
-    client-fingerprint: "qq"
+    servername: "ai.eosshop.net"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU"
-  - name: "🇰🇷 韩国 01"
-    type: "ss"
-    server: "43.201.148.241"
-    port: 2096
-    udp: true
-    cipher: "chacha20-ietf-poly1305"
-    password: "bf5129f1-31f5-4edf-a07a-27ec31b26c1d"
 proxy-groups:
   - name: "选择"
     type: "select"
     proxies:
       - "自动"
-      - "🇭🇰 香港 01"
-      - "🇭🇰 香港 02"
+      - "🇸🇬 新加坡 01"
+      - "🇹🇭 泰国 01"
       - "🇲🇾 马来西亚 01"
-      - "🇩🇪 德国 01"
-      - "🇳🇱 荷兰 01"
-      - "🇳🇱 荷兰 02"
       - "🇺🇸 美国 01"
-      - "🇬🇧 英国 01"
-      - "🇬🇧 英国 02"
-      - "🇬🇧 英国 03"
       - "🇺🇸 美国 02"
-      - "🇵🇹 葡萄牙 01"
       - "🇫🇷 法国 01"
       - "🇫🇷 法国 02"
-      - "🇫🇷 法国 03"
+      - "🇦🇹 奥地利 01"
+      - "🇺🇸 美国 03"
+      - "🇳🇱 荷兰 01"
+      - "🇳🇱 荷兰 02"
+      - "🇺🇸 美国 04"
+      - "🇩🇪 德国 01"
+      - "🇩🇪 德国 02"
       - "🇷🇺 俄罗斯 01"
+      - "🇹🇷 土耳其 01"
       - "🇷🇺 俄罗斯 02"
       - "🇷🇺 俄罗斯 03"
-      - "🇷🇺 俄罗斯 04"
-      - "🇷🇺 俄罗斯 05"
-      - "🇷🇺 俄罗斯 06"
-      - "🇷🇺 俄罗斯 07"
-      - "🇷🇺 俄罗斯 08"
-      - "🇰🇷 韩国 01"
+      - "🇫🇮 芬兰 01"
+      - "🇫🇮 芬兰 02"
   - name: "自动"
     type: "url-test"
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 80
     proxies:
-      - "🇭🇰 香港 01"
-      - "🇭🇰 香港 02"
+      - "🇸🇬 新加坡 01"
+      - "🇹🇭 泰国 01"
       - "🇲🇾 马来西亚 01"
-      - "🇩🇪 德国 01"
-      - "🇳🇱 荷兰 01"
-      - "🇳🇱 荷兰 02"
       - "🇺🇸 美国 01"
-      - "🇬🇧 英国 01"
-      - "🇬🇧 英国 02"
-      - "🇬🇧 英国 03"
       - "🇺🇸 美国 02"
-      - "🇵🇹 葡萄牙 01"
       - "🇫🇷 法国 01"
       - "🇫🇷 法国 02"
-      - "🇫🇷 法国 03"
+      - "🇦🇹 奥地利 01"
+      - "🇺🇸 美国 03"
+      - "🇳🇱 荷兰 01"
+      - "🇳🇱 荷兰 02"
+      - "🇺🇸 美国 04"
+      - "🇩🇪 德国 01"
+      - "🇩🇪 德国 02"
       - "🇷🇺 俄罗斯 01"
+      - "🇹🇷 土耳其 01"
       - "🇷🇺 俄罗斯 02"
       - "🇷🇺 俄罗斯 03"
-      - "🇷🇺 俄罗斯 04"
-      - "🇷🇺 俄罗斯 05"
-      - "🇷🇺 俄罗斯 06"
-      - "🇷🇺 俄罗斯 07"
-      - "🇷🇺 俄罗斯 08"
-      - "🇰🇷 韩国 01"
+      - "🇫🇮 芬兰 01"
+      - "🇫🇮 芬兰 02"
 rules:
   - "MATCH,选择"
