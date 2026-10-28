@@ -8,9 +8,37 @@ mode: rule
 log-level: info
 ipv6: false
 proxies:
-  - name: "🇸🇬 新加坡 01"
+  - name: "🇯🇵 日本 01"
     type: "vless"
-    server: "43.174.193.1"
+    server: "45.202.255.92"
+    port: 9443
+    udp: true
+    uuid: "4a270d3e-27b4-497d-8c8c-28f1f54958d9"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "www.amazon.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4"
+      short-id: "b390142456517acc"
+  - name: "🇯🇵 日本 02"
+    type: "vless"
+    server: "161.33.167.20"
+    port: 443
+    udp: true
+    uuid: "c69e7fcd-115e-483a-accb-bfd4e50ce048"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "addons.mozilla.org"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "agxOIgWPqcmkKEPzEfNUjsgrHi4vlBmjtbdUoE-mvEk"
+      short-id: "fd9f6074"
+  - name: "🇯🇵 日本 03"
+    type: "vless"
+    server: "141.11.139.215"
     port: 443
     udp: true
     uuid: "d342d11e-d224-4463-b982-532309285094"
@@ -21,20 +49,76 @@ proxies:
       path: "/fp=chrome"
       headers:
         Host: "ccc.010304.xyz"
-  - name: "🇹🇭 泰国 01"
+  - name: "🇭🇰 香港 01"
     type: "vless"
-    server: "45.154.26.63"
-    port: 443
+    server: "45.39.198.144"
+    port: 9443
     udp: true
-    uuid: "ff85e702-b605-4109-884d-2c1f065d0954"
+    uuid: "4a270d3e-27b4-497d-8c8c-28f1f54958d9"
     network: "tcp"
     tls: true
     flow: "xtls-rprx-vision"
-    servername: "www.cloudflare.com"
+    servername: "www.amazon.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk"
-      short-id: "3c032a7e"
+      public-key: "0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4"
+      short-id: "b390142456517acc"
+  - name: "🇭🇰 香港 02"
+    type: "vmess"
+    server: "vah4urdzl3jdx5r2.v.3dns.vip"
+    port: 443
+    udp: true
+    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
+    alterId: 0
+    cipher: "auto"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "vah4urdzl3jdx5r2.v.3dns.vip"
+  - name: "🇭🇰 香港 03"
+    type: "vmess"
+    server: "nycqg19zkwacpm1b.v.3dns.vip"
+    port: 443
+    udp: true
+    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
+    alterId: 0
+    cipher: "auto"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "NYcQg19zkwaCPM1B.v.3dns.vip"
+  - name: "🇭🇰 香港 04"
+    type: "vmess"
+    server: "qtkdr8jxe3wefxjm.v.3dns.vip"
+    port: 443
+    udp: true
+    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
+    alterId: 0
+    cipher: "auto"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "qtkdr8jxe3wefxjm.v.3dns.vip"
+  - name: "🇭🇰 香港 05"
+    type: "vmess"
+    server: "8.218.195.61"
+    port: 443
+    udp: true
+    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
+    alterId: 0
+    cipher: "auto"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "EX1oGt73NzPQKAc2.v.3dns.vip"
   - name: "🇲🇾 马来西亚 01"
     type: "vless"
     server: "216.173.67.59"
@@ -49,27 +133,55 @@ proxies:
       headers:
         Host: "ccc.010304.xyz"
   - name: "🇺🇸 美国 01"
-    type: "hysteria2"
-    server: "promo3.betust.net"
-    port: 443
-    udp: true
-    password: "94c2b91777f8de3a5bc12d2a91b732c2"
-    skip-cert-verify: true
-    sni: "promo3.betust.net"
-  - name: "🇺🇸 美国 02"
     type: "vless"
-    server: "177.7.51.29"
-    port: 8443
+    server: "156.229.164.160"
+    port: 9443
     udp: true
-    uuid: "c6b1b2d0-ed5e-48ce-99e6-112ff330030d"
+    uuid: "4a270d3e-27b4-497d-8c8c-28f1f54958d9"
     network: "tcp"
     tls: true
     flow: "xtls-rprx-vision"
-    servername: "www.apple.com"
+    servername: "www.amazon.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "laG5BxoSbdRozpauATNFBPPTwhuDuu0JFl_SCP2ZQlU"
-      short-id: "14fbf992"
+      public-key: "0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4"
+      short-id: "b390142456517acc"
+  - name: "🇺🇸 美国 02"
+    type: "vless"
+    server: "156.229.160.98"
+    port: 9443
+    udp: true
+    uuid: "4a270d3e-27b4-497d-8c8c-28f1f54958d9"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "www.amazon.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4"
+      short-id: "b390142456517acc"
+  - name: "🇺🇸 美国 03"
+    type: "vless"
+    server: "156.229.160.98"
+    port: 9443
+    udp: true
+    uuid: "4a270d3e-27b4-497d-8c8c-28f1f54958d9"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "www.amazon.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4"
+      short-id: "b390142456517acc"
+  - name: "🇩🇪 德国 01"
+    type: "hysteria2"
+    server: "179.254.127.159"
+    port: 443
+    udp: true
+    password: "23c82941-70f4-4381-90db-bd28e9a902e9"
+    skip-cert-verify: true
+    sni: "steel7.hadsvpn.com"
   - name: "🇫🇷 法国 01"
     type: "vless"
     server: "edge.bookmai.com"
@@ -84,57 +196,14 @@ proxies:
     reality-opts:
       public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
   - name: "🇫🇷 法国 02"
-    type: "vless"
-    server: "163.245.42.48"
+    type: "hysteria2"
+    server: "31.185.105.12"
     port: 443
     udp: true
-    uuid: "b9bfa54d-bc44-4592-a6d6-89a9665d286f"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "mother-earth.fyi"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇦🇹 奥地利 01"
-    type: "trojan"
-    server: "212.183.88.136"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.calmlunch.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇺🇸 美国 03"
-    type: "trojan"
-    server: "165.215.250.14"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.calmlunch.com"
+    password: "1953e43b-605c-4262-83eb-41a80646b801"
     skip-cert-verify: true
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
+    sni: "fr.song69.fun"
   - name: "🇳🇱 荷兰 01"
-    type: "vless"
-    server: "2.27.118.10"
-    port: 443
-    udp: true
-    uuid: "d9fe2431-8351-41eb-b956-75d96dec5d4a"
-    network: "tcp"
-    tls: true
-    servername: "ph-nl-s3784.cybercat.network"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "goey7Sc4Xm6Nvdukb_DuoUnrkPSV0p4hPWbAmk2_AHc"
-      short-id: "ecf1d9f7caa6ba67"
-  - name: "🇳🇱 荷兰 02"
     type: "hysteria2"
     server: "130.49.161.70"
     port: 443
@@ -146,167 +215,127 @@ proxies:
     obfs-password: "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
   - name: "🇺🇸 美国 04"
     type: "hysteria2"
-    server: "forshynewh.duckdns.org"
+    server: "217.60.72.225"
     port: 443
     udp: true
     password: "329e13e4-ee7c-4802-ac72-5fcab79c2402"
     skip-cert-verify: true
     sni: "forshynewh.duckdns.org"
-  - name: "🇩🇪 德国 01"
+  - name: "🇺🇸 美国 05"
     type: "vless"
-    server: "ge-s-1.pythonmakemigreat.wiki"
+    server: "216.167.126.97"
     port: 443
     udp: true
-    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    uuid: "e5c3d067-7a15-4977-90c0-7e0f6e896a09"
     network: "tcp"
     tls: true
     flow: "xtls-rprx-vision"
-    servername: "ge-s-1.pythonmakemigreat.wiki"
+    servername: "www.cloudflare.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8"
-      short-id: "2c9a2790ad5900b2"
-  - name: "🇩🇪 德国 02"
+      public-key: "yFvOpugh65xKQNAwKrhitv4d2pflD8QwNFMj-jDOmT8"
+      short-id: "0123456789abcdef"
+  - name: "🇺🇸 美国 06"
     type: "hysteria2"
-    server: "162.249.125.133"
+    server: "starlink-ft.251313.xyz"
     port: 443
     udp: true
-    password: "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s"
+    password: "https://xship.top"
     skip-cert-verify: true
-    sni: "hy2-new.aspidnet.xyz"
-    obfs: "salamander"
-    obfs-password: "c1b4086fea89914496c7e10967a419216566"
-  - name: "🇷🇺 俄罗斯 01"
-    type: "vless"
-    server: "193.160.141.27"
-    port: 443
-    udp: true
-    uuid: "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "abuse.ozon.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇹🇷 土耳其 01"
-    type: "vless"
-    server: "tr2.tv-quoralyx.top"
-    port: 443
-    udp: true
-    uuid: "4b1be712-774c-4b65-8491-a3339e124a70"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "tr2.tv-quoralyx.top"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "w0yEuw7sPMCEwk9_vDVoqjBhJsGoPvR7TsxIZVJy3iw"
-      short-id: "f4b2a12c"
-  - name: "🇷🇺 俄罗斯 02"
-    type: "vless"
-    server: "94.228.167.12"
-    port: 443
-    udp: true
-    uuid: "37ca5f34-2531-4fda-a781-20f3845fea88"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "washingphonicseatable.solsticedigest.me"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "dCaQHVtwEPBeiH3ivVU9ycGJZ8uCO2JaIVjYBnfaTWY"
-      short-id: "c13c9bd7bd45847d"
-  - name: "🇷🇺 俄罗斯 03"
-    type: "vless"
-    server: "178.250.157.231"
-    port: 443
-    udp: true
-    uuid: "37ca5f34-2531-4fda-a781-20f3845fea88"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "lifeskaterstudent.caskstudio.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "pObQ7F063LsHc_lDuUfzPnx83C-goIPyyffMZs1CG0U"
-      short-id: "c9e5505275320b51"
+    sni: "xship.top"
   - name: "🇫🇮 芬兰 01"
     type: "vless"
-    server: "31.76.89.226"
+    server: "77.42.12.225"
     port: 443
     udp: true
-    uuid: "30572b57-f5ab-4eb8-82d4-a24d399b99f6"
-    network: "tcp"
+    uuid: "056405e8-de9f-4d0d-8145-956f13cc34da"
+    network: "grpc"
     tls: true
-    flow: "xtls-rprx-vision"
-    servername: "ai.eosshop.net"
-    client-fingerprint: "chrome"
+    servername: "8fc752g.fi3.h1clayd.click"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU"
-  - name: "🇫🇮 芬兰 02"
+      public-key: "GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18"
+      short-id: "09d0a94a1c6fc9d5"
+    grpc-opts:
+      grpc-service-name: "f345a414c040"
+  - name: "🇰🇿 哈萨克斯坦 01"
     type: "vless"
-    server: "31.76.89.226"
+    server: "46.8.43.125"
     port: 443
     udp: true
-    uuid: "30572b57-f5ab-4eb8-82d4-a24d399b99f6"
+    uuid: "846cedee-2a52-4a62-a0b9-11850ead6a8b"
     network: "tcp"
     tls: true
-    flow: "xtls-rprx-vision"
-    servername: "ai.eosshop.net"
-    client-fingerprint: "chrome"
+    servername: "kz-central.v8x2b.lol"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU"
+      public-key: "ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w"
+  - name: "🇰🇿 哈萨克斯坦 02"
+    type: "vless"
+    server: "kz-central.v8x2b.lol"
+    port: 443
+    udp: true
+    uuid: "846cedee-2a52-4a62-a0b9-11850ead6a8b"
+    network: "tcp"
+    tls: true
+    servername: "kz-central.v8x2b.lol"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w"
 proxy-groups:
   - name: "选择"
     type: "select"
     proxies:
       - "自动"
-      - "🇸🇬 新加坡 01"
-      - "🇹🇭 泰国 01"
+      - "🇯🇵 日本 01"
+      - "🇯🇵 日本 02"
+      - "🇯🇵 日本 03"
+      - "🇭🇰 香港 01"
+      - "🇭🇰 香港 02"
+      - "🇭🇰 香港 03"
+      - "🇭🇰 香港 04"
+      - "🇭🇰 香港 05"
       - "🇲🇾 马来西亚 01"
       - "🇺🇸 美国 01"
       - "🇺🇸 美国 02"
+      - "🇺🇸 美国 03"
+      - "🇩🇪 德国 01"
       - "🇫🇷 法国 01"
       - "🇫🇷 法国 02"
-      - "🇦🇹 奥地利 01"
-      - "🇺🇸 美国 03"
       - "🇳🇱 荷兰 01"
-      - "🇳🇱 荷兰 02"
       - "🇺🇸 美国 04"
-      - "🇩🇪 德国 01"
-      - "🇩🇪 德国 02"
-      - "🇷🇺 俄罗斯 01"
-      - "🇹🇷 土耳其 01"
-      - "🇷🇺 俄罗斯 02"
-      - "🇷🇺 俄罗斯 03"
+      - "🇺🇸 美国 05"
+      - "🇺🇸 美国 06"
       - "🇫🇮 芬兰 01"
-      - "🇫🇮 芬兰 02"
+      - "🇰🇿 哈萨克斯坦 01"
+      - "🇰🇿 哈萨克斯坦 02"
   - name: "自动"
     type: "url-test"
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 80
     proxies:
-      - "🇸🇬 新加坡 01"
-      - "🇹🇭 泰国 01"
+      - "🇯🇵 日本 01"
+      - "🇯🇵 日本 02"
+      - "🇯🇵 日本 03"
+      - "🇭🇰 香港 01"
+      - "🇭🇰 香港 02"
+      - "🇭🇰 香港 03"
+      - "🇭🇰 香港 04"
+      - "🇭🇰 香港 05"
       - "🇲🇾 马来西亚 01"
       - "🇺🇸 美国 01"
       - "🇺🇸 美国 02"
+      - "🇺🇸 美国 03"
+      - "🇩🇪 德国 01"
       - "🇫🇷 法国 01"
       - "🇫🇷 法国 02"
-      - "🇦🇹 奥地利 01"
-      - "🇺🇸 美国 03"
       - "🇳🇱 荷兰 01"
-      - "🇳🇱 荷兰 02"
       - "🇺🇸 美国 04"
-      - "🇩🇪 德国 01"
-      - "🇩🇪 德国 02"
-      - "🇷🇺 俄罗斯 01"
-      - "🇹🇷 土耳其 01"
-      - "🇷🇺 俄罗斯 02"
-      - "🇷🇺 俄罗斯 03"
+      - "🇺🇸 美国 05"
+      - "🇺🇸 美国 06"
       - "🇫🇮 芬兰 01"
-      - "🇫🇮 芬兰 02"
+      - "🇰🇿 哈萨克斯坦 01"
+      - "🇰🇿 哈萨克斯坦 02"
 rules:
   - "MATCH,选择"
