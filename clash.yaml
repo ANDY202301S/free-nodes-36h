@@ -8,206 +8,91 @@ mode: rule
 log-level: info
 ipv6: false
 proxies:
-  - name: "🇯🇵 日本 01"
-    type: "trojan"
-    server: "43.167.186.78"
-    port: 8443
-    udp: true
-    password: "9646699a-18b0-4ebc-9f53-453cc1c8e637"
-    network: "tcp"
-    sni: "43.167.186.78"
-    skip-cert-verify: true
-  - name: "🇯🇵 日本 02"
-    type: "vless"
-    server: "141.11.139.215"
-    port: 443
-    udp: true
-    uuid: "d342d11e-d224-4463-b982-532309285094"
-    network: "ws"
-    tls: true
-    servername: "ccc.010304.xyz"
-    ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: "ccc.010304.xyz"
   - name: "🇭🇰 香港 01"
-    type: "vmess"
-    server: "rhhierkwrf6fhs2h.v.3dns.vip"
-    port: 443
-    udp: true
-    uuid: "78b3f149-f037-465d-b2fb-11adb6f73ff8"
-    alterId: 0
-    cipher: "auto"
-    tls: true
-    network: "ws"
-    servername: "rhhierkwrf6fhs2h.v.3dns.vip"
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: "rhhierkwrf6fhs2h.v.3dns.vip"
-  - name: "🇲🇾 马来西亚 01"
     type: "vless"
-    server: "216.173.67.59"
+    server: "a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com"
     port: 443
     udp: true
-    uuid: "d342d11e-d224-4463-b982-532309285094"
-    network: "ws"
-    tls: true
-    servername: "ccc.010304.xyz"
-    ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: "ccc.010304.xyz"
-  - name: "🇲🇾 马来西亚 02"
-    type: "trojan"
-    server: "47.250.84.25"
-    port: 443
-    udp: true
-    password: "5931134d1cde66bf83a54acdfebe7ab2"
-    network: "tcp"
-    sni: "moltbot.doctoroyy.net"
-    skip-cert-verify: true
-  - name: "🇫🇷 法国 01"
-    type: "vless"
-    server: "9.247.23.209"
-    port: 443
-    udp: true
-    uuid: "b9bfa54d-bc44-4592-a6d6-89a9665d286f"
+    uuid: "6d56436c-150d-11f0-b0c8-f23c913c8d2b"
     network: "tcp"
     tls: true
-    flow: "xtls-rprx-vision"
-    servername: "mother-earth.fyi"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇫🇷 法国 02"
-    type: "vless"
-    server: "edge.bookmai.com"
-    port: 443
-    udp: true
-    uuid: "b9bfa54d-bc44-4592-a6d6-89a9665d286f"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "mother-earth.fyi"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇩🇪 德国 01"
-    type: "vless"
-    server: "de166.mech-pro.online"
-    port: 443
-    udp: true
-    uuid: "976f82d9-0e6b-40ed-9c09-cafd06c4bc98"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "de166.mech-pro.online"
+    servername: "download.windowsupdate.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI"
-      short-id: "16e0f049"
-  - name: "🇫🇷 法国 03"
+      public-key: "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo"
+  - name: "🇭🇰 香港 02"
     type: "vless"
-    server: "163.245.42.157"
+    server: "0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com"
     port: 443
     udp: true
-    uuid: "b9bfa54d-bc44-4592-a6d6-89a9665d286f"
+    uuid: "ea800f9e-ca6c-11ef-8e74-f23c913c8d2b"
+    network: "tcp"
+    tls: true
+    servername: "download.windowsupdate.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo"
+  - name: "🇸🇬 新加坡 01"
+    type: "trojan"
+    server: "149.28.130.108"
+    port: 443
+    udp: true
+    password: "0ab6c98dae3b48e8b9c4a776b6c9c19a"
+    network: "tcp"
+    sni: "searchcreativejobsandshowcaseyourartistictalents.com"
+  - name: "🇯🇵 日本 01"
+    type: "vless"
+    server: "jp.huahua.wiki"
+    port: 443
+    udp: true
+    uuid: "ef857676-6b00-4c1b-8d98-712dd355230a"
     network: "tcp"
     tls: true
     flow: "xtls-rprx-vision"
-    servername: "mother-earth.fyi"
+    servername: "www.apple.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇨🇦 加拿大 01"
+      public-key: "dr63-MwSmvcVljij8PHNZasukHgBv0mHk-QKa7i4yyo"
+      short-id: "bff486649d0ae69e"
+  - name: "🇭🇰 香港 03"
     type: "trojan"
-    server: "104.19.229.21"
+    server: "193.134.209.165"
     port: 443
     udp: true
     password: "humanity"
     network: "ws"
-    sni: "www.calmlunch.com"
+    sni: "www.cordweave.com"
     ws-opts:
       path: "/assignment"
       headers:
-        Host: "www.calmlunch.com"
-  - name: "🇺🇸 美国 01"
+        Host: "www.cordweave.com"
+  - name: "🇯🇵 日本 02"
     type: "trojan"
-    server: "165.215.250.14"
+    server: "129.225.185.49"
     port: 443
     udp: true
     password: "humanity"
     network: "ws"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
+    sni: "www.cordweave.com"
     ws-opts:
       path: "/assignment"
       headers:
-        Host: "www.calmlunch.com"
-  - name: "🇨🇦 加拿大 02"
+        Host: "www.cordweave.com"
+  - name: "🇭🇰 香港 04"
     type: "trojan"
-    server: "162.159.36.20"
+    server: "103.69.128.221"
     port: 443
     udp: true
     password: "humanity"
     network: "ws"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
+    sni: "www.cordweave.com"
     ws-opts:
       path: "/assignment"
       headers:
-        Host: "www.calmlunch.com"
-  - name: "🇨🇦 加拿大 03"
+        Host: "www.cordweave.com"
+  - name: "🇯🇵 日本 03"
     type: "trojan"
-    server: "www.speedtest.net"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇳🇱 荷兰 01"
-    type: "hysteria2"
-    server: "130.49.161.70"
-    port: 443
-    udp: true
-    password: "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR"
-    skip-cert-verify: true
-    sni: "hy2.aspidnet.xyz"
-    obfs: "salamander"
-    obfs-password: "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-  - name: "🇨🇦 加拿大 04"
-    type: "trojan"
-    server: "www.calmlunch.com"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.calmlunch.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇳🇱 荷兰 02"
-    type: "trojan"
-    server: "45.87.41.18"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.calmlunch.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇨🇦 加拿大 05"
-    type: "trojan"
-    server: "172.67.203.46"
+    server: "45.8.115.202"
     port: 443
     udp: true
     password: "humanity"
@@ -218,173 +103,348 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.cordweave.com"
-    alpn:
-      - "http/1.1"
-  - name: "🇩🇪 德国 02"
+  - name: "🇭🇰 香港 05"
     type: "trojan"
-    server: "185.220.100.168"
+    server: "45.196.235.64"
     port: 443
     udp: true
     password: "humanity"
     network: "ws"
-    sni: "www.calmlunch.com"
+    sni: "www.cordweave.com"
     ws-opts:
       path: "/assignment"
       headers:
-        Host: "www.calmlunch.com"
-  - name: "🇩🇪 德国 03"
+        Host: "www.cordweave.com"
+  - name: "🇯🇵 日本 04"
     type: "trojan"
-    server: "185.255.179.166"
+    server: "35.78.243.103"
     port: 443
     udp: true
     password: "humanity"
     network: "ws"
-    sni: "www.calmlunch.com"
+    sni: "www.cordweave.com"
     ws-opts:
       path: "/assignment"
       headers:
-        Host: "www.calmlunch.com"
-  - name: "🇩🇪 德国 04"
+        Host: "www.cordweave.com"
+  - name: "🇭🇰 香港 06"
     type: "trojan"
-    server: "45.80.111.7"
+    server: "103.219.195.65"
     port: 443
     udp: true
     password: "humanity"
     network: "ws"
-    sni: "www.calmlunch.com"
+    sni: "www.cordweave.com"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.cordweave.com"
+  - name: "🇯🇵 日本 05"
+    type: "trojan"
+    server: "212.192.221.107"
+    port: 443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.cordweave.com"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.cordweave.com"
+  - name: "🇭🇰 香港 07"
+    type: "trojan"
+    server: "38.207.177.204"
+    port: 443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.cordweave.com"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.cordweave.com"
+  - name: "🇰🇷 韩国 01"
+    type: "trojan"
+    server: "141.164.34.161"
+    port: 8443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.cordweave.com"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.cordweave.com"
+  - name: "🇰🇷 韩国 02"
+    type: "trojan"
+    server: "64.110.82.71"
+    port: 443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.cordweave.com"
     skip-cert-verify: true
     ws-opts:
       path: "/assignment"
       headers:
-        Host: "www.calmlunch.com"
-  - name: "🇺🇸 美国 02"
-    type: "hysteria2"
-    server: "starlink-ft.251313.xyz"
+        Host: "www.cordweave.com"
+  - name: "🇰🇷 韩国 03"
+    type: "trojan"
+    server: "54.116.249.102"
     port: 443
     udp: true
-    password: "https://xship.2fa.cat"
+    password: "humanity"
+    network: "ws"
+    sni: "www.cordweave.com"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.cordweave.com"
+  - name: "🇭🇰 香港 08"
+    type: "trojan"
+    server: "68.64.180.218"
+    port: 443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.cordweave.com"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.cordweave.com"
+  - name: "🇸🇬 新加坡 02"
+    type: "trojan"
+    server: "157.245.159.88"
+    port: 443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.cordweave.com"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.cordweave.com"
+  - name: "🇭🇰 香港 09"
+    type: "trojan"
+    server: "207.57.132.189"
+    port: 8443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.cordweave.com"
     skip-cert-verify: true
-    sni: "xship.top"
-  - name: "🌐 其他 01"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.cordweave.com"
+  - name: "🇭🇰 香港 10"
     type: "trojan"
-    server: "45.130.125.160"
+    server: "207.57.123.77"
     port: 443
     udp: true
     password: "humanity"
     network: "ws"
-    sni: "www.calmlunch.com"
+    sni: "www.cordweave.com"
     ws-opts:
       path: "/assignment"
       headers:
-        Host: "www.calmlunch.com"
-  - name: "🇭🇺 匈牙利 01"
-    type: "trojan"
-    server: "185.225.68.232"
+        Host: "www.cordweave.com"
+  - name: "🇭🇰 香港 11"
+    type: "vmess"
+    server: "47.76.57.83"
     port: 443
     udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.calmlunch.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇫🇮 芬兰 01"
-    type: "trojan"
-    server: "46.62.204.134"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.pleadcourt.org"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.pleadcourt.org"
-    alpn:
-      - "http/1.1"
-  - name: "🇷🇺 俄罗斯 01"
-    type: "vless"
-    server: "186.246.9.29"
-    port: 443
-    udp: true
-    uuid: "b2847c3b-5278-4b06-9c66-bc919d2dfec7"
-    network: "tcp"
+    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
+    alterId: 0
+    cipher: "auto"
     tls: true
-    servername: "wordpress.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA"
-      short-id: "50ad5564"
-  - name: "🇯🇵 日本 03"
-    type: "ss"
-    server: "149.22.87.204"
+    network: "ws"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "vah4urdzl3jdx5r2.v.3dns.vip"
+  - name: "🇭🇰 香港 12"
+    type: "vmess"
+    server: "8.217.254.88"
     port: 443
     udp: true
-    cipher: "aes-128-gcm"
-    password: "shadowsocks"
+    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
+    alterId: 0
+    cipher: "auto"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "2b9hwy8ocx7q74nm.v.3dns.vip"
+  - name: "🇸🇬 新加坡 03"
+    type: "trojan"
+    server: "128.199.128.117"
+    port: 443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.cordweave.com"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.cordweave.com"
+  - name: "🇰🇷 韩国 04"
+    type: "trojan"
+    server: "141.164.56.22"
+    port: 443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.cordweave.com"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.cordweave.com"
+  - name: "🇸🇬 新加坡 04"
+    type: "trojan"
+    server: "168.144.41.69"
+    port: 443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.cordweave.com"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.cordweave.com"
+  - name: "🇸🇬 新加坡 05"
+    type: "trojan"
+    server: "178.93.160.132"
+    port: 443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.cordweave.com"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.cordweave.com"
+  - name: "🇭🇰 香港 13"
+    type: "trojan"
+    server: "47.57.181.17"
+    port: 443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.cordweave.com"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.cordweave.com"
+  - name: "🇰🇷 韩国 05"
+    type: "trojan"
+    server: "103.218.173.218"
+    port: 443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.cordweave.com"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.cordweave.com"
+  - name: "🇭🇰 香港 14"
+    type: "vmess"
+    server: "euu1yalfmcqvljex.v.3dns.vip"
+    port: 443
+    udp: true
+    uuid: "d237ab38-1974-4b36-94a3-0665ce8587b9"
+    alterId: 0
+    cipher: "auto"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "euu1yalfmcqvljex.v.3dns.vip"
+  - name: "🇸🇬 新加坡 06"
+    type: "trojan"
+    server: "165.22.102.89"
+    port: 443
+    udp: true
+    password: "humanity"
+    network: "ws"
+    sni: "www.cordweave.com"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.cordweave.com"
 proxy-groups:
   - name: "选择"
     type: "select"
     proxies:
       - "自动"
-      - "🇯🇵 日本 01"
-      - "🇯🇵 日本 02"
       - "🇭🇰 香港 01"
-      - "🇲🇾 马来西亚 01"
-      - "🇲🇾 马来西亚 02"
-      - "🇫🇷 法国 01"
-      - "🇫🇷 法国 02"
-      - "🇩🇪 德国 01"
-      - "🇫🇷 法国 03"
-      - "🇨🇦 加拿大 01"
-      - "🇺🇸 美国 01"
-      - "🇨🇦 加拿大 02"
-      - "🇨🇦 加拿大 03"
-      - "🇳🇱 荷兰 01"
-      - "🇨🇦 加拿大 04"
-      - "🇳🇱 荷兰 02"
-      - "🇨🇦 加拿大 05"
-      - "🇩🇪 德国 02"
-      - "🇩🇪 德国 03"
-      - "🇩🇪 德国 04"
-      - "🇺🇸 美国 02"
-      - "🌐 其他 01"
-      - "🇭🇺 匈牙利 01"
-      - "🇫🇮 芬兰 01"
-      - "🇷🇺 俄罗斯 01"
+      - "🇭🇰 香港 02"
+      - "🇸🇬 新加坡 01"
+      - "🇯🇵 日本 01"
+      - "🇭🇰 香港 03"
+      - "🇯🇵 日本 02"
+      - "🇭🇰 香港 04"
       - "🇯🇵 日本 03"
+      - "🇭🇰 香港 05"
+      - "🇯🇵 日本 04"
+      - "🇭🇰 香港 06"
+      - "🇯🇵 日本 05"
+      - "🇭🇰 香港 07"
+      - "🇰🇷 韩国 01"
+      - "🇰🇷 韩国 02"
+      - "🇰🇷 韩国 03"
+      - "🇭🇰 香港 08"
+      - "🇸🇬 新加坡 02"
+      - "🇭🇰 香港 09"
+      - "🇭🇰 香港 10"
+      - "🇭🇰 香港 11"
+      - "🇭🇰 香港 12"
+      - "🇸🇬 新加坡 03"
+      - "🇰🇷 韩国 04"
+      - "🇸🇬 新加坡 04"
+      - "🇸🇬 新加坡 05"
+      - "🇭🇰 香港 13"
+      - "🇰🇷 韩国 05"
+      - "🇭🇰 香港 14"
+      - "🇸🇬 新加坡 06"
   - name: "自动"
     type: "url-test"
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 80
     proxies:
-      - "🇯🇵 日本 01"
-      - "🇯🇵 日本 02"
       - "🇭🇰 香港 01"
-      - "🇲🇾 马来西亚 01"
-      - "🇲🇾 马来西亚 02"
-      - "🇫🇷 法国 01"
-      - "🇫🇷 法国 02"
-      - "🇩🇪 德国 01"
-      - "🇫🇷 法国 03"
-      - "🇨🇦 加拿大 01"
-      - "🇺🇸 美国 01"
-      - "🇨🇦 加拿大 02"
-      - "🇨🇦 加拿大 03"
-      - "🇳🇱 荷兰 01"
-      - "🇨🇦 加拿大 04"
-      - "🇳🇱 荷兰 02"
-      - "🇨🇦 加拿大 05"
-      - "🇩🇪 德国 02"
-      - "🇩🇪 德国 03"
-      - "🇩🇪 德国 04"
-      - "🇺🇸 美国 02"
-      - "🌐 其他 01"
-      - "🇭🇺 匈牙利 01"
-      - "🇫🇮 芬兰 01"
-      - "🇷🇺 俄罗斯 01"
+      - "🇭🇰 香港 02"
+      - "🇸🇬 新加坡 01"
+      - "🇯🇵 日本 01"
+      - "🇭🇰 香港 03"
+      - "🇯🇵 日本 02"
+      - "🇭🇰 香港 04"
       - "🇯🇵 日本 03"
+      - "🇭🇰 香港 05"
+      - "🇯🇵 日本 04"
+      - "🇭🇰 香港 06"
+      - "🇯🇵 日本 05"
+      - "🇭🇰 香港 07"
+      - "🇰🇷 韩国 01"
+      - "🇰🇷 韩国 02"
+      - "🇰🇷 韩国 03"
+      - "🇭🇰 香港 08"
+      - "🇸🇬 新加坡 02"
+      - "🇭🇰 香港 09"
+      - "🇭🇰 香港 10"
+      - "🇭🇰 香港 11"
+      - "🇭🇰 香港 12"
+      - "🇸🇬 新加坡 03"
+      - "🇰🇷 韩国 04"
+      - "🇸🇬 新加坡 04"
+      - "🇸🇬 新加坡 05"
+      - "🇭🇰 香港 13"
+      - "🇰🇷 韩国 05"
+      - "🇭🇰 香港 14"
+      - "🇸🇬 新加坡 06"
 rules:
   - "MATCH,选择"
