@@ -8,30 +8,87 @@ mode: rule
 log-level: info
 ipv6: false
 proxies:
-  - name: "🇭🇰 香港 01"
-    type: "vless"
-    server: "a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com"
+  - name: "🇹🇼 台湾 01"
+    type: "hysteria2"
+    server: "160.187.100.109"
     port: 443
     udp: true
-    uuid: "6d56436c-150d-11f0-b0c8-f23c913c8d2b"
-    network: "tcp"
-    tls: true
-    servername: "download.windowsupdate.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo"
-  - name: "🇭🇰 香港 02"
-    type: "vless"
-    server: "0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com"
+    password: "H7mP2xY9kJ4nQ8wR5tF6vB3z"
+    skip-cert-verify: true
+    sni: "160.187.100.109"
+  - name: "🇰🇷 韩国 01"
+    type: "hysteria2"
+    server: "152.70.237.123"
+    port: 2053
+    udp: true
+    password: "maintell"
+    skip-cert-verify: true
+    sni: "bing.com"
+  - name: "🇯🇵 日本 01"
+    type: "trojan"
+    server: "172.104.89.73"
     port: 443
     udp: true
-    uuid: "ea800f9e-ca6c-11ef-8e74-f23c913c8d2b"
+    password: "8deb189a-3aed-4865-843b-b72dae954c46"
+    network: "ws"
+    sni: "api.85s.me"
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "api.85s.me"
+  - name: "🇯🇵 日本 02"
+    type: "trojan"
+    server: "175.41.232.194"
+    port: 443
+    udp: true
+    password: "8deb189a-3aed-4865-843b-b72dae954c46"
+    network: "ws"
+    sni: "api.85s.me"
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "api.85s.me"
+  - name: "🇹🇼 台湾 02"
+    type: "vless"
+    server: "45.207.159.71"
+    port: 8443
+    udp: true
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
     network: "tcp"
     tls: true
-    servername: "download.windowsupdate.com"
+    servername: "github.githubassets.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo"
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+  - name: "🇯🇵 日本 03"
+    type: "trojan"
+    server: "13.158.71.221"
+    port: 443
+    udp: true
+    password: "8deb189a-3aed-4865-843b-b72dae954c46"
+    network: "ws"
+    sni: "api.85s.me"
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "api.85s.me"
+  - name: "🇯🇵 日本 04"
+    type: "trojan"
+    server: "13.158.86.30"
+    port: 443
+    udp: true
+    password: "8deb189a-3aed-4865-843b-b72dae954c46"
+    network: "ws"
+    sni: "api.85s.me"
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "api.85s.me"
   - name: "🇸🇬 新加坡 01"
     type: "trojan"
     server: "149.28.130.108"
@@ -40,216 +97,188 @@ proxies:
     password: "0ab6c98dae3b48e8b9c4a776b6c9c19a"
     network: "tcp"
     sni: "searchcreativejobsandshowcaseyourartistictalents.com"
-  - name: "🇯🇵 日本 01"
-    type: "vless"
-    server: "jp.huahua.wiki"
+  - name: "🇭🇰 香港 01"
+    type: "hysteria2"
+    server: "202.146.222.89"
     port: 443
     udp: true
-    uuid: "ef857676-6b00-4c1b-8d98-712dd355230a"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "dr63-MwSmvcVljij8PHNZasukHgBv0mHk-QKa7i4yyo"
-      short-id: "bff486649d0ae69e"
+    password: "H7mP2xY9kJ4nQ8wR5tF6vB3z"
+    skip-cert-verify: true
+    sni: "https://t.me/clashv8🇨🇳"
+  - name: "🇭🇰 香港 02"
+    type: "hysteria2"
+    server: "202.146.222.174"
+    port: 443
+    udp: true
+    password: "H7mP2xY9kJ4nQ8wR5tF6vB3z"
+    skip-cert-verify: true
+    sni: "https://t.me/WangCai2🇨🇳"
   - name: "🇭🇰 香港 03"
-    type: "trojan"
-    server: "193.134.209.165"
+    type: "vmess"
+    server: "euu1yAlfmcqvLJEx.v.3dns.vip"
     port: 443
     udp: true
-    password: "humanity"
+    uuid: "d237ab38-1974-4b36-94a3-0665ce8587b9"
+    alterId: 0
+    cipher: "auto"
+    tls: true
     network: "ws"
-    sni: "www.cordweave.com"
     ws-opts:
-      path: "/assignment"
+      path: "/ws-vmess"
       headers:
-        Host: "www.cordweave.com"
-  - name: "🇯🇵 日本 02"
-    type: "trojan"
-    server: "129.225.185.49"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
+        Host: "euu1yAlfmcqvLJEx.v.3dns.vip"
   - name: "🇭🇰 香港 04"
-    type: "trojan"
-    server: "103.69.128.221"
+    type: "vmess"
+    server: "47.243.167.44"
     port: 443
     udp: true
-    password: "humanity"
+    uuid: "78b3f149-f037-465d-b2fb-11adb6f73ff8"
+    alterId: 0
+    cipher: "auto"
+    tls: true
     network: "ws"
-    sni: "www.cordweave.com"
     ws-opts:
-      path: "/assignment"
+      path: "/ws-vmess"
       headers:
-        Host: "www.cordweave.com"
-  - name: "🇯🇵 日本 03"
-    type: "trojan"
-    server: "45.8.115.202"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    client-fingerprint: "chrome"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
+        Host: "rhHiErkwRf6fHs2H.v.3dns.vip"
   - name: "🇭🇰 香港 05"
     type: "trojan"
-    server: "45.196.235.64"
+    server: "85.121.245.35"
     port: 443
     udp: true
-    password: "humanity"
+    password: "8deb189a-3aed-4865-843b-b72dae954c46"
     network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
-  - name: "🇯🇵 日本 04"
-    type: "trojan"
-    server: "35.78.243.103"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
-  - name: "🇭🇰 香港 06"
-    type: "trojan"
-    server: "103.219.195.65"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
-  - name: "🇯🇵 日本 05"
-    type: "trojan"
-    server: "212.192.221.107"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
-  - name: "🇭🇰 香港 07"
-    type: "trojan"
-    server: "38.207.177.204"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
-  - name: "🇰🇷 韩国 01"
-    type: "trojan"
-    server: "141.164.34.161"
-    port: 8443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
-  - name: "🇰🇷 韩国 02"
-    type: "trojan"
-    server: "64.110.82.71"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
+    sni: "api.85s.me"
     skip-cert-verify: true
     ws-opts:
-      path: "/assignment"
+      path: "/"
       headers:
-        Host: "www.cordweave.com"
-  - name: "🇰🇷 韩国 03"
-    type: "trojan"
-    server: "54.116.249.102"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
-  - name: "🇭🇰 香港 08"
-    type: "trojan"
-    server: "68.64.180.218"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
+        Host: "api.85s.me"
   - name: "🇸🇬 新加坡 02"
     type: "trojan"
-    server: "157.245.159.88"
+    server: "172.104.161.198"
     port: 443
     udp: true
-    password: "humanity"
+    password: "8deb189a-3aed-4865-843b-b72dae954c46"
     network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
-  - name: "🇭🇰 香港 09"
-    type: "trojan"
-    server: "207.57.132.189"
-    port: 8443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
+    sni: "api.85s.me"
     skip-cert-verify: true
     ws-opts:
-      path: "/assignment"
+      path: "/"
       headers:
-        Host: "www.cordweave.com"
-  - name: "🇭🇰 香港 10"
+        Host: "api.85s.me"
+  - name: "🇸🇬 新加坡 03"
     type: "trojan"
-    server: "207.57.123.77"
+    server: "172.236.139.181"
     port: 443
     udp: true
-    password: "humanity"
+    password: "8deb189a-3aed-4865-843b-b72dae954c46"
     network: "ws"
-    sni: "www.cordweave.com"
+    sni: "api.85s.me"
+    skip-cert-verify: true
     ws-opts:
-      path: "/assignment"
+      path: "/"
       headers:
-        Host: "www.cordweave.com"
+        Host: "api.85s.me"
+  - name: "🇭🇰 香港 06"
+    type: "vmess"
+    server: "ex1ogt73nzpqkac2.v.3dns.vip"
+    port: 443
+    udp: true
+    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
+    alterId: 0
+    cipher: "auto"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "ex1ogt73nzpqkac2.v.3dns.vip"
+  - name: "🇭🇰 香港 07"
+    type: "vmess"
+    server: "rhhierkwrf6fhs2h.v.3dns.vip"
+    port: 443
+    udp: true
+    uuid: "78b3f149-f037-465d-b2fb-11adb6f73ff8"
+    alterId: 0
+    cipher: "auto"
+    tls: true
+    network: "ws"
+    servername: "rhhierkwrf6fhs2h.v.3dns.vip"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "rhhierkwrf6fhs2h.v.3dns.vip"
+  - name: "🇭🇰 香港 08"
+    type: "vmess"
+    server: "rhhierkwrf6fhs2h.v.3dns.vip"
+    port: 443
+    udp: true
+    uuid: "78b3f149-f037-465d-b2fb-11adb6f73ff8"
+    alterId: 0
+    cipher: "auto"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "rhhierkwrf6fhs2h.v.3dns.vip"
+  - name: "🇹🇼 台湾 03"
+    type: "trojan"
+    server: "83.147.15.84"
+    port: 8443
+    udp: true
+    password: "8deb189a-3aed-4865-843b-b72dae954c46"
+    network: "ws"
+    sni: "api.85s.me"
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "api.85s.me"
+  - name: "🇭🇰 香港 09"
+    type: "vmess"
+    server: "lcv8v9l7oyamxxfz.v.3dns.vip"
+    port: 443
+    udp: true
+    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
+    alterId: 0
+    cipher: "auto"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "lcv8v9l7oyamxxfz.v.3dns.vip"
+  - name: "🇭🇰 香港 10"
+    type: "vmess"
+    server: "47.243.194.125"
+    port: 443
+    udp: true
+    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
+    alterId: 0
+    cipher: "auto"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "nycqg19zkwacpm1b.v.3dns.vip"
   - name: "🇭🇰 香港 11"
+    type: "vmess"
+    server: "47.243.153.153"
+    port: 443
+    udp: true
+    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
+    alterId: 0
+    cipher: "auto"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "i2psm3knof5qjjix.v.3dns.vip"
+  - name: "🇭🇰 香港 12"
     type: "vmess"
     server: "47.76.57.83"
     port: 443
@@ -263,9 +292,9 @@ proxies:
       path: "/ws-vmess"
       headers:
         Host: "vah4urdzl3jdx5r2.v.3dns.vip"
-  - name: "🇭🇰 香港 12"
+  - name: "🇭🇰 香港 13"
     type: "vmess"
-    server: "8.217.254.88"
+    server: "vah4urdzl3jdx5r2.v.3dns.vip"
     port: 443
     udp: true
     uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
@@ -276,175 +305,92 @@ proxies:
     ws-opts:
       path: "/ws-vmess"
       headers:
-        Host: "2b9hwy8ocx7q74nm.v.3dns.vip"
-  - name: "🇸🇬 新加坡 03"
-    type: "trojan"
-    server: "128.199.128.117"
+        Host: "vah4urdzl3jdx5r2.v.3dns.vip"
+  - name: "🇯🇵 日本 05"
+    type: "ss"
+    server: "149.22.87.204"
     port: 443
     udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
-  - name: "🇰🇷 韩国 04"
-    type: "trojan"
-    server: "141.164.56.22"
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+  - name: "🇯🇵 日本 06"
+    type: "ss"
+    server: "149.22.87.240"
     port: 443
     udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
-  - name: "🇸🇬 新加坡 04"
-    type: "trojan"
-    server: "168.144.41.69"
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+  - name: "🇯🇵 日本 07"
+    type: "ss"
+    server: "84.247.155.196"
     port: 443
     udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
-  - name: "🇸🇬 新加坡 05"
-    type: "trojan"
-    server: "178.93.160.132"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
-  - name: "🇭🇰 香港 13"
-    type: "trojan"
-    server: "47.57.181.17"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
-  - name: "🇰🇷 韩国 05"
-    type: "trojan"
-    server: "103.218.173.218"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
-  - name: "🇭🇰 香港 14"
-    type: "vmess"
-    server: "euu1yalfmcqvljex.v.3dns.vip"
-    port: 443
-    udp: true
-    uuid: "d237ab38-1974-4b36-94a3-0665ce8587b9"
-    alterId: 0
-    cipher: "auto"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: "euu1yalfmcqvljex.v.3dns.vip"
-  - name: "🇸🇬 新加坡 06"
-    type: "trojan"
-    server: "165.22.102.89"
-    port: 443
-    udp: true
-    password: "humanity"
-    network: "ws"
-    sni: "www.cordweave.com"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.cordweave.com"
+    cipher: "aes-256-gcm"
+    password: "3eOFeNssde7PYYMv"
 proxy-groups:
   - name: "选择"
     type: "select"
     proxies:
       - "自动"
+      - "🇹🇼 台湾 01"
+      - "🇰🇷 韩国 01"
+      - "🇯🇵 日本 01"
+      - "🇯🇵 日本 02"
+      - "🇹🇼 台湾 02"
+      - "🇯🇵 日本 03"
+      - "🇯🇵 日本 04"
+      - "🇸🇬 新加坡 01"
       - "🇭🇰 香港 01"
       - "🇭🇰 香港 02"
-      - "🇸🇬 新加坡 01"
-      - "🇯🇵 日本 01"
       - "🇭🇰 香港 03"
-      - "🇯🇵 日本 02"
       - "🇭🇰 香港 04"
-      - "🇯🇵 日本 03"
       - "🇭🇰 香港 05"
-      - "🇯🇵 日本 04"
-      - "🇭🇰 香港 06"
-      - "🇯🇵 日本 05"
-      - "🇭🇰 香港 07"
-      - "🇰🇷 韩国 01"
-      - "🇰🇷 韩国 02"
-      - "🇰🇷 韩国 03"
-      - "🇭🇰 香港 08"
       - "🇸🇬 新加坡 02"
+      - "🇸🇬 新加坡 03"
+      - "🇭🇰 香港 06"
+      - "🇭🇰 香港 07"
+      - "🇭🇰 香港 08"
+      - "🇹🇼 台湾 03"
       - "🇭🇰 香港 09"
       - "🇭🇰 香港 10"
       - "🇭🇰 香港 11"
       - "🇭🇰 香港 12"
-      - "🇸🇬 新加坡 03"
-      - "🇰🇷 韩国 04"
-      - "🇸🇬 新加坡 04"
-      - "🇸🇬 新加坡 05"
       - "🇭🇰 香港 13"
-      - "🇰🇷 韩国 05"
-      - "🇭🇰 香港 14"
-      - "🇸🇬 新加坡 06"
+      - "🇯🇵 日本 05"
+      - "🇯🇵 日本 06"
+      - "🇯🇵 日本 07"
   - name: "自动"
     type: "url-test"
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 80
     proxies:
+      - "🇹🇼 台湾 01"
+      - "🇰🇷 韩国 01"
+      - "🇯🇵 日本 01"
+      - "🇯🇵 日本 02"
+      - "🇹🇼 台湾 02"
+      - "🇯🇵 日本 03"
+      - "🇯🇵 日本 04"
+      - "🇸🇬 新加坡 01"
       - "🇭🇰 香港 01"
       - "🇭🇰 香港 02"
-      - "🇸🇬 新加坡 01"
-      - "🇯🇵 日本 01"
       - "🇭🇰 香港 03"
-      - "🇯🇵 日本 02"
       - "🇭🇰 香港 04"
-      - "🇯🇵 日本 03"
       - "🇭🇰 香港 05"
-      - "🇯🇵 日本 04"
-      - "🇭🇰 香港 06"
-      - "🇯🇵 日本 05"
-      - "🇭🇰 香港 07"
-      - "🇰🇷 韩国 01"
-      - "🇰🇷 韩国 02"
-      - "🇰🇷 韩国 03"
-      - "🇭🇰 香港 08"
       - "🇸🇬 新加坡 02"
+      - "🇸🇬 新加坡 03"
+      - "🇭🇰 香港 06"
+      - "🇭🇰 香港 07"
+      - "🇭🇰 香港 08"
+      - "🇹🇼 台湾 03"
       - "🇭🇰 香港 09"
       - "🇭🇰 香港 10"
       - "🇭🇰 香港 11"
       - "🇭🇰 香港 12"
-      - "🇸🇬 新加坡 03"
-      - "🇰🇷 韩国 04"
-      - "🇸🇬 新加坡 04"
-      - "🇸🇬 新加坡 05"
       - "🇭🇰 香港 13"
-      - "🇰🇷 韩国 05"
-      - "🇭🇰 香港 14"
-      - "🇸🇬 新加坡 06"
+      - "🇯🇵 日本 05"
+      - "🇯🇵 日本 06"
+      - "🇯🇵 日本 07"
 rules:
   - "MATCH,选择"
