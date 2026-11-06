@@ -8,19 +8,6 @@ mode: rule
 log-level: info
 ipv6: false
 proxies:
-  - name: "🇯🇵 日本 01"
-    type: "vless"
-    server: "45.192.248.29"
-    port: 8443
-    udp: true
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    network: "tcp"
-    tls: true
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
   - name: "🇸🇬 新加坡 01"
     type: "trojan"
     server: "149.28.130.108"
@@ -29,65 +16,17 @@ proxies:
     password: "0ab6c98dae3b48e8b9c4a776b6c9c19a"
     network: "tcp"
     sni: "searchcreativejobsandshowcaseyourartistictalents.com"
-  - name: "🇭🇰 香港 01"
-    type: "vmess"
-    server: "rhHiErkwRf6fHs2H.v.3dns.vip"
-    port: 443
-    udp: true
-    uuid: "78b3f149-f037-465d-b2fb-11adb6f73ff8"
-    alterId: 0
-    cipher: "auto"
-    tls: true
-    network: "ws"
-    servername: "rhHiErkwRf6fHs2H.v.3dns.vip"
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: "rhHiErkwRf6fHs2H.v.3dns.vip"
-  - name: "🇭🇰 香港 02"
-    type: "vmess"
-    server: "i2psm3knof5qjjix.v.3dns.vip"
-    port: 443
-    udp: true
-    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
-    alterId: 0
-    cipher: "auto"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: "i2psm3knof5qjjix.v.3dns.vip"
-  - name: "🇭🇰 香港 03"
-    type: "vmess"
-    server: "rhhierkwrf6fhs2h.v.3dns.vip"
-    port: 443
-    udp: true
-    uuid: "78b3f149-f037-465d-b2fb-11adb6f73ff8"
-    alterId: 0
-    cipher: "auto"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: "rhhierkwrf6fhs2h.v.3dns.vip"
-  - name: "🇹🇼 台湾 01"
-    type: "vmess"
-    server: "terutrrj.d6f54hd1j.cc"
-    port: 443
-    udp: true
-    uuid: "a904e307-771f-498b-87ad-8e6e0d0ade4a"
-    alterId: 0
-    cipher: "auto"
-    tls: true
-    network: "ws"
-    servername: "terutrrj.d6f54hd1j.cc"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "terutrrj.d6f54hd1j.cc"
   - name: "🇸🇬 新加坡 02"
+    type: "vless"
+    server: "45.76.155.179"
+    port: 443
+    udp: true
+    uuid: "e9a8144e-5237-488a-afb1-9ca3d8d54c80"
+    network: "tcp"
+    tls: true
+    servername: "sg003.zestapp778.com"
+    client-fingerprint: "firefox"
+  - name: "🇸🇬 新加坡 03"
     type: "vless"
     server: "43.163.112.174"
     port: 443
@@ -101,78 +40,40 @@ proxies:
     reality-opts:
       public-key: "mXQudYHNu0pebcdk1_qn-UgcmwhjaV7y9UrYu3HX7Rg"
       short-id: "0123456789abcdef"
-  - name: "🇭🇰 香港 04"
-    type: "vmess"
-    server: "47.243.153.153"
+  - name: "🇺🇸 美国 01"
+    type: "hysteria2"
+    server: "6b9f9b99-tmm5c0-tsdg75-tlhh.los.hyhuawei.com"
     port: 443
     udp: true
-    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
-    alterId: 0
-    cipher: "auto"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: "i2psm3knof5qjjix.v.3dns.vip"
-  - name: "🇭🇰 香港 05"
-    type: "vmess"
-    server: "8.218.195.61"
+    password: "bdf3e15e-c64c-11ea-82ef-f23c9164ca5d"
+    skip-cert-verify: true
+    sni: "6b9f9b99-tmm5c0-tsdg75-tlhh.los.hyhuawei.com"
+  - name: "🇳🇱 荷兰 01"
+    type: "vless"
+    server: "76574ct.nl7.h1clayd.click"
     port: 443
     udp: true
-    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
-    alterId: 0
-    cipher: "auto"
+    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    network: "tcp"
     tls: true
-    network: "ws"
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: "EX1oGt73NzPQKAc2.v.3dns.vip"
-  - name: "🇭🇰 香港 06"
-    type: "vmess"
-    server: "8.217.13.103"
+    servername: "76574ct.nl7.h1clayd.click"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc"
+      short-id: "2ca59bdc5121f921"
+  - name: "🇫🇷 法国 01"
+    type: "vless"
+    server: "edge.bookmai.com"
     port: 443
     udp: true
-    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
-    alterId: 0
-    cipher: "auto"
+    uuid: "b9bfa54d-bc44-4592-a6d6-89a9665d286f"
+    network: "tcp"
     tls: true
-    network: "ws"
-    servername: "qtkdr8jxe3wefxjm.v.3dns.vip"
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: "qtkdr8jxe3wefxjm.v.3dns.vip"
-  - name: "🇭🇰 香港 07"
-    type: "vmess"
-    server: "47.76.57.83"
-    port: 443
-    udp: true
-    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
-    alterId: 0
-    cipher: "auto"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: "vah4urdzl3jdx5r2.v.3dns.vip"
-  - name: "🇭🇰 香港 08"
-    type: "vmess"
-    server: "8.217.254.88"
-    port: 443
-    udp: true
-    uuid: "f23bb427-c1f9-4373-876c-2f43e9f790f3"
-    alterId: 0
-    cipher: "auto"
-    tls: true
-    network: "ws"
-    servername: "2b9hwy8ocx7q74nm.v.3dns.vip"
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: "2b9hwy8ocx7q74nm.v.3dns.vip"
+    flow: "xtls-rprx-vision"
+    servername: "mother-earth.fyi"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
   - name: "🇩🇪 德国 01"
     type: "vless"
     server: "9.247.23.209"
@@ -186,7 +87,7 @@ proxies:
     client-fingerprint: "chrome"
     reality-opts:
       public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇫🇷 法国 01"
+  - name: "🇫🇷 法国 02"
     type: "vless"
     server: "163.245.42.56"
     port: 443
@@ -199,19 +100,56 @@ proxies:
     client-fingerprint: "firefox"
     reality-opts:
       public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇫🇷 法国 02"
-    type: "vless"
-    server: "edge.bookmai.com"
+  - name: "🇺🇸 美国 02"
+    type: "hysteria2"
+    server: "186.246.18.62"
     port: 443
     udp: true
-    uuid: "b9bfa54d-bc44-4592-a6d6-89a9665d286f"
+    password: "f4b80b26-b6d4-49a6-a460-f50efb7a457c"
+    skip-cert-verify: true
+    sni: "hy.cardlist24.shop"
+  - name: "🇵🇹 葡萄牙 01"
+    type: "vless"
+    server: "198.16.113.218"
+    port: 8443
+    udp: true
+    uuid: "98a24806-141a-43d3-b094-bd66c4eb93b8"
     network: "tcp"
     tls: true
     flow: "xtls-rprx-vision"
-    servername: "mother-earth.fyi"
+    servername: "www.apple.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      public-key: "8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE"
+      short-id: "69984b9e02545831"
+  - name: "🇵🇹 葡萄牙 02"
+    type: "vless"
+    server: "198.16.113.220"
+    port: 8443
+    udp: true
+    uuid: "98a24806-141a-43d3-b094-bd66c4eb93b8"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE"
+      short-id: "69984b9e02545831"
+  - name: "🇦🇹 奥地利 01"
+    type: "vless"
+    server: "178.22.31.72"
+    port: 443
+    udp: true
+    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "at1.japancase.site"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg"
+      short-id: "41ae8e266bc3346f"
   - name: "🇩🇪 德国 02"
     type: "vless"
     server: "193.23.218.107"
@@ -226,34 +164,67 @@ proxies:
     reality-opts:
       public-key: "cBTZdCBwrYTTarw6B_lu2TN1M6_Lku68FfWCQT9svhc"
       short-id: "cb620aa2f04bce33"
-  - name: "🇷🇺 俄罗斯 01"
+  - name: "🇳🇱 荷兰 02"
     type: "vless"
-    server: "147.45.161.4"
+    server: "15d7fft.nl11.h1clayd.click"
     port: 443
     udp: true
-    uuid: "7ad63b26-bf70-4872-8fab-ebaf73a1e19d"
+    uuid: "b7b8ee80-db83-4276-8c68-87dc88b0b0b5"
+    network: "tcp"
+    tls: true
+    servername: "15d7fft.nl11.h1clayd.click"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "xv6OUZcyzEHXFMTfumuJH-1Rd4NQ0cdmWikek4mm0m4"
+      short-id: "c71118d9399fb8c2"
+  - name: "🇳🇱 荷兰 03"
+    type: "vless"
+    server: "15d7fft.nl11.h1clayd.click"
+    port: 443
+    udp: true
+    uuid: "b7b8ee80-db83-4276-8c68-87dc88b0b0b5"
+    network: "tcp"
+    tls: true
+    servername: "15d7fft.nl11.h1clayd.click"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "xv6OUZcyzEHXFMTfumuJH-1Rd4NQ0cdmWikek4mm0m4"
+      short-id: "c71118d9399fb8c2"
+  - name: "🌐 其他 01"
+    type: "vless"
+    server: "178.214.109.1"
+    port: 443
+    udp: true
+    uuid: "40a86b1b-239d-455e-b53f-4c270788ba6e"
     network: "tcp"
     tls: true
     flow: "xtls-rprx-vision"
-    servername: "defs-68.topp-con.xyz"
-    client-fingerprint: "firefox"
+    servername: "promo-digital.wb.ru"
+    client-fingerprint: "edge"
     reality-opts:
-      public-key: "xTePrM5IyjR8o52B2mRAO2nNivfyMpBZxya93MQk4Qc"
-      short-id: "2a40b6d6495debf3"
-  - name: "🇯🇵 日本 02"
+      public-key: "3p6W4rMBh1HCwbjq4lcbWO0KjkqTshJU5lkTix5nwTc"
+      short-id: "1cfa55abe4d2dc7a"
+  - name: "🇯🇵 日本 01"
     type: "ss"
     server: "149.22.87.204"
     port: 443
     udp: true
     cipher: "aes-128-gcm"
     password: "shadowsocks"
-  - name: "🇯🇵 日本 03"
+  - name: "🇯🇵 日本 02"
     type: "ss"
     server: "149.22.87.240"
     port: 443
     udp: true
     cipher: "aes-128-gcm"
     password: "shadowsocks"
+  - name: "🇯🇵 日本 03"
+    type: "ss"
+    server: "84.247.155.196"
+    port: 443
+    udp: true
+    cipher: "aes-256-gcm"
+    password: "3eOFeNssde7PYYMv"
   - name: "🇯🇵 日本 04"
     type: "ss"
     server: "84.247.155.196"
@@ -266,23 +237,23 @@ proxy-groups:
     type: "select"
     proxies:
       - "自动"
-      - "🇯🇵 日本 01"
       - "🇸🇬 新加坡 01"
-      - "🇭🇰 香港 01"
-      - "🇭🇰 香港 02"
-      - "🇭🇰 香港 03"
-      - "🇹🇼 台湾 01"
       - "🇸🇬 新加坡 02"
-      - "🇭🇰 香港 04"
-      - "🇭🇰 香港 05"
-      - "🇭🇰 香港 06"
-      - "🇭🇰 香港 07"
-      - "🇭🇰 香港 08"
-      - "🇩🇪 德国 01"
+      - "🇸🇬 新加坡 03"
+      - "🇺🇸 美国 01"
+      - "🇳🇱 荷兰 01"
       - "🇫🇷 法国 01"
+      - "🇩🇪 德国 01"
       - "🇫🇷 法国 02"
+      - "🇺🇸 美国 02"
+      - "🇵🇹 葡萄牙 01"
+      - "🇵🇹 葡萄牙 02"
+      - "🇦🇹 奥地利 01"
       - "🇩🇪 德国 02"
-      - "🇷🇺 俄罗斯 01"
+      - "🇳🇱 荷兰 02"
+      - "🇳🇱 荷兰 03"
+      - "🌐 其他 01"
+      - "🇯🇵 日本 01"
       - "🇯🇵 日本 02"
       - "🇯🇵 日本 03"
       - "🇯🇵 日本 04"
@@ -292,23 +263,23 @@ proxy-groups:
     interval: 300
     tolerance: 80
     proxies:
-      - "🇯🇵 日本 01"
       - "🇸🇬 新加坡 01"
-      - "🇭🇰 香港 01"
-      - "🇭🇰 香港 02"
-      - "🇭🇰 香港 03"
-      - "🇹🇼 台湾 01"
       - "🇸🇬 新加坡 02"
-      - "🇭🇰 香港 04"
-      - "🇭🇰 香港 05"
-      - "🇭🇰 香港 06"
-      - "🇭🇰 香港 07"
-      - "🇭🇰 香港 08"
-      - "🇩🇪 德国 01"
+      - "🇸🇬 新加坡 03"
+      - "🇺🇸 美国 01"
+      - "🇳🇱 荷兰 01"
       - "🇫🇷 法国 01"
+      - "🇩🇪 德国 01"
       - "🇫🇷 法国 02"
+      - "🇺🇸 美国 02"
+      - "🇵🇹 葡萄牙 01"
+      - "🇵🇹 葡萄牙 02"
+      - "🇦🇹 奥地利 01"
       - "🇩🇪 德国 02"
-      - "🇷🇺 俄罗斯 01"
+      - "🇳🇱 荷兰 02"
+      - "🇳🇱 荷兰 03"
+      - "🌐 其他 01"
+      - "🇯🇵 日本 01"
       - "🇯🇵 日本 02"
       - "🇯🇵 日本 03"
       - "🇯🇵 日本 04"
