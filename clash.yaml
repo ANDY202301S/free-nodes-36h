@@ -8,6 +8,40 @@ mode: rule
 log-level: info
 ipv6: false
 proxies:
+  - name: "🇯🇵 日本 01"
+    type: "hysteria2"
+    server: "8.211.175.236"
+    port: 8443
+    udp: true
+    password: "u63SxILNwtrQZ7Y1ZrFaZfsA"
+    skip-cert-verify: true
+  - name: "🇯🇵 日本 02"
+    type: "vless"
+    server: "jpgajma.xyy123.date"
+    port: 443
+    udp: true
+    uuid: "a4fa57a2-d4df-482b-afec-aa38a824a23a"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "home.amazon.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "dtNeCNIcRgs8_EKIJg_oTJEsiA8KBU-QaE1yVpkoX0I"
+      short-id: "2c92d6"
+  - name: "🇯🇵 日本 03"
+    type: "vless"
+    server: "46.250.248.210"
+    port: 443
+    udp: true
+    uuid: "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    network: "ws"
+    tls: true
+    servername: "fs.qicai99.com"
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "fs.qicai99.com"
   - name: "🇸🇬 新加坡 01"
     type: "vless"
     server: "45.76.155.179"
@@ -26,110 +60,166 @@ proxies:
     password: "0ab6c98dae3b48e8b9c4a776b6c9c19a"
     network: "tcp"
     sni: "searchcreativejobsandshowcaseyourartistictalents.com"
+  - name: "🇰🇷 韩国 01"
+    type: "vless"
+    server: "64.110.79.66"
+    port: 8443
+    udp: true
+    uuid: "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    network: "ws"
+    tls: true
+    servername: "fs.qicai99.com"
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "fs.qicai99.com"
+  - name: "🇸🇬 新加坡 03"
+    type: "vless"
+    server: "172.104.60.54"
+    port: 443
+    udp: true
+    uuid: "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    network: "ws"
+    tls: true
+    servername: "fs.qicai99.com"
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "fs.qicai99.com"
+  - name: "🇸🇬 新加坡 04"
+    type: "vless"
+    server: "157.230.248.19"
+    port: 443
+    udp: true
+    uuid: "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    network: "ws"
+    tls: true
+    servername: "fs.qicai99.com"
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "fs.qicai99.com"
+  - name: "🇸🇬 新加坡 05"
+    type: "vless"
+    server: "139.162.62.195"
+    port: 443
+    udp: true
+    uuid: "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    network: "ws"
+    tls: true
+    servername: "fs.qicai99.com"
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "fs.qicai99.com"
+  - name: "🇹🇼 台湾 01"
+    type: "trojan"
+    server: "t2w2t2w2.bpca2026.top"
+    port: 443
+    udp: true
+    password: "9efd3f19-c7cb-4fa9-8d66-0598043597dc"
+    network: "ws"
+    sni: "t2w2t2w2.bpca2026.top"
     skip-cert-verify: true
-  - name: "🇩🇪 德国 01"
+    ws-opts:
+      path: "/images"
+      headers:
+        Host: "t2w2t2w2.bpca2026.top"
+  - name: "🇯🇵 日本 04"
+    type: "hysteria2"
+    server: "8.209.247.109"
+    port: 443
+    udp: true
+    password: "usqmqUKJFIlCmvkCNSY64L3k"
+    skip-cert-verify: true
+    sni: "bing.com"
+  - name: "🇸🇬 新加坡 06"
     type: "vless"
-    server: "64.188.66.181"
+    server: "161.118.200.170"
     port: 443
     udp: true
-    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
-    network: "tcp"
+    uuid: "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    network: "ws"
     tls: true
-    flow: "xtls-rprx-vision"
-    servername: "ge-s-1.pythonmakemigreat.wiki"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8"
-      short-id: "2c9a2790ad5900b2"
-  - name: "🇫🇷 法国 01"
+    servername: "fs.qicai99.com"
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "fs.qicai99.com"
+  - name: "🇸🇬 新加坡 07"
     type: "vless"
-    server: "edge.bookmai.com"
+    server: "143.42.66.91"
     port: 443
     udp: true
-    uuid: "b9bfa54d-bc44-4592-a6d6-89a9665d286f"
-    network: "tcp"
+    uuid: "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    network: "ws"
     tls: true
-    flow: "xtls-rprx-vision"
-    servername: "mother-earth.fyi"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇩🇪 德国 02"
+    servername: "fs.qicai99.com"
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "fs.qicai99.com"
+  - name: "🇯🇵 日本 05"
     type: "vless"
-    server: "9.247.23.209"
+    server: "46.250.254.187"
     port: 443
     udp: true
-    uuid: "b9bfa54d-bc44-4592-a6d6-89a9665d286f"
-    network: "tcp"
+    uuid: "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    network: "ws"
     tls: true
-    flow: "xtls-rprx-vision"
-    servername: "mother-earth.fyi"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "🇨🇭 瑞士 01"
-    type: "vless"
-    server: "prvtch.titun.su"
+    servername: "fs.qicai99.com"
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "fs.qicai99.com"
+  - name: "🇸🇬 新加坡 08"
+    type: "trojan"
+    server: "15.235.184.127"
     port: 443
     udp: true
-    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    password: "0ab6c98dae3b48e8b9c4a776b6c9c19a"
     network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "perevodchiki.su"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
-      short-id: "428ef87fd47a3a32"
-  - name: "🇯🇵 日本 01"
-    type: "ss"
-    server: "149.22.87.240"
-    port: 443
-    udp: true
-    cipher: "aes-128-gcm"
-    password: "shadowsocks"
-  - name: "🇯🇵 日本 02"
-    type: "ss"
-    server: "149.22.87.204"
-    port: 443
-    udp: true
-    cipher: "aes-128-gcm"
-    password: "shadowsocks"
-  - name: "🇯🇵 日本 03"
-    type: "ss"
-    server: "84.247.155.196"
-    port: 443
-    udp: true
-    cipher: "aes-256-gcm"
-    password: "3eOFeNssde7PYYMv"
+    sni: "exploredigitaljobplatformandfindonlinework.com"
 proxy-groups:
   - name: "选择"
     type: "select"
     proxies:
       - "自动"
-      - "🇸🇬 新加坡 01"
-      - "🇸🇬 新加坡 02"
-      - "🇩🇪 德国 01"
-      - "🇫🇷 法国 01"
-      - "🇩🇪 德国 02"
-      - "🇨🇭 瑞士 01"
       - "🇯🇵 日本 01"
       - "🇯🇵 日本 02"
       - "🇯🇵 日本 03"
+      - "🇸🇬 新加坡 01"
+      - "🇸🇬 新加坡 02"
+      - "🇰🇷 韩国 01"
+      - "🇸🇬 新加坡 03"
+      - "🇸🇬 新加坡 04"
+      - "🇸🇬 新加坡 05"
+      - "🇹🇼 台湾 01"
+      - "🇯🇵 日本 04"
+      - "🇸🇬 新加坡 06"
+      - "🇸🇬 新加坡 07"
+      - "🇯🇵 日本 05"
+      - "🇸🇬 新加坡 08"
   - name: "自动"
     type: "url-test"
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 80
     proxies:
-      - "🇸🇬 新加坡 01"
-      - "🇸🇬 新加坡 02"
-      - "🇩🇪 德国 01"
-      - "🇫🇷 法国 01"
-      - "🇩🇪 德国 02"
-      - "🇨🇭 瑞士 01"
       - "🇯🇵 日本 01"
       - "🇯🇵 日本 02"
       - "🇯🇵 日本 03"
+      - "🇸🇬 新加坡 01"
+      - "🇸🇬 新加坡 02"
+      - "🇰🇷 韩国 01"
+      - "🇸🇬 新加坡 03"
+      - "🇸🇬 新加坡 04"
+      - "🇸🇬 新加坡 05"
+      - "🇹🇼 台湾 01"
+      - "🇯🇵 日本 04"
+      - "🇸🇬 新加坡 06"
+      - "🇸🇬 新加坡 07"
+      - "🇯🇵 日本 05"
+      - "🇸🇬 新加坡 08"
 rules:
   - "MATCH,选择"
