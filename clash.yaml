@@ -8,6 +8,19 @@ mode: rule
 log-level: info
 ipv6: false
 proxies:
+  - name: "🇯🇵 日本 01"
+    type: "vless"
+    server: "46.250.248.210"
+    port: 443
+    udp: true
+    uuid: "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    network: "ws"
+    tls: true
+    servername: "fs.qicai99.com"
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "fs.qicai99.com"
   - name: "🇰🇷 韩国 01"
     type: "trojan"
     server: "158.247.253.243"
@@ -17,22 +30,19 @@ proxies:
     network: "tcp"
     sni: "connectgraduateswithjobopeningsandgrowprofessionally.com"
     skip-cert-verify: true
-  - name: "🇸🇬 新加坡 01"
-    type: "trojan"
-    server: "149.28.130.108"
+  - name: "🇭🇰 香港 01"
+    type: "vless"
+    server: "23.156.153.40"
     port: 443
     udp: true
-    password: "0ab6c98dae3b48e8b9c4a776b6c9c19a"
-    network: "tcp"
-    sni: "searchcreativejobsandshowcaseyourartistictalents.com"
-  - name: "🇸🇬 新加坡 02"
-    type: "hysteria2"
-    server: "singapore.062888.xyz"
-    port: 443
-    udp: true
-    password: "8VPFWgN7mbwHWxTC"
-    skip-cert-verify: true
-    sni: "www.microsoft.com"
+    uuid: "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    network: "ws"
+    tls: true
+    servername: "fs.qicai99.com"
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "fs.qicai99.com"
   - name: "🇰🇷 韩国 02"
     type: "vless"
     server: "64.110.79.66"
@@ -46,86 +56,85 @@ proxies:
       path: "/fp=chrome"
       headers:
         Host: "fs.qicai99.com"
-  - name: "🇭🇰 香港 01"
-    type: "vless"
-    server: "38.207.177.204"
+  - name: "🇸🇬 新加坡 01"
+    type: "trojan"
+    server: "149.28.130.108"
     port: 443
     udp: true
-    uuid: "99c5b713-dedf-4a10-8070-916ff3f49b0e"
-    network: "ws"
-    tls: true
-    servername: "fs.qicai99.com"
-    ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: "fs.qicai99.com"
-  - name: "🇭🇰 香港 02"
-    type: "vless"
-    server: "68.64.182.205"
+    password: "0ab6c98dae3b48e8b9c4a776b6c9c19a"
+    network: "tcp"
+    sni: "searchcreativejobsandshowcaseyourartistictalents.com"
+  - name: "🇸🇬 新加坡 02"
+    type: "trojan"
+    server: "15.235.184.127"
     port: 443
     udp: true
-    uuid: "99c5b713-dedf-4a10-8070-916ff3f49b0e"
-    network: "ws"
-    tls: true
-    servername: "fs.qicai99.com"
-    ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: "fs.qicai99.com"
-  - name: "🇸🇬 新加坡 03"
+    password: "0ab6c98dae3b48e8b9c4a776b6c9c19a"
+    network: "tcp"
+    sni: "exploredigitaljobplatformandfindonlinework.com"
+  - name: "🇳🇱 荷兰 01"
     type: "hysteria2"
-    server: "165.154.193.165"
+    server: "212.34.137.105"
     port: 443
     udp: true
-    password: "qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt"
+    password: "549766c3-fa5f-471e-8031-ffc1f8d5064f"
     skip-cert-verify: true
-    sni: "165.154.193.165"
+    sni: "shorts.blog-forme.ru"
+  - name: "🇳🇱 荷兰 02"
+    type: "hysteria2"
+    server: "130.49.161.70"
+    port: 443
+    udp: true
+    password: "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR"
+    skip-cert-verify: true
+    sni: "hy2.aspidnet.xyz"
     obfs: "salamander"
-    obfs-password: "d7897b996af77eeecb7ac010361d74fb"
-    alpn:
-      - "h3"
-  - name: "🌐 其他 01"
-    type: "vless"
-    server: "94.183.234.245"
+    obfs-password: "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+  - name: "🇺🇸 美国 01"
+    type: "hysteria2"
+    server: "nlll.obxodvpn.us"
     port: 443
     udp: true
-    uuid: "5de0c218-0138-45d8-94d2-c2c3f37a1a6d"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "www.bing.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc"
-      short-id: "7f1e29593aa94ad1"
-  - name: "🌐 其他 01"
-    type: "vless"
-    server: "196.196.149.80"
+    password: "146d567c-6335-4e63-a8aa-7ec068642440"
+    skip-cert-verify: true
+    sni: "nlll.obxodvpn.us"
+  - name: "🇺🇸 美国 02"
+    type: "hysteria2"
+    server: "steel7.hadsvpn.com"
     port: 443
     udp: true
-    uuid: "4201786b-d99b-4147-a5f0-20d47acddb81"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "7aa271t.es1.h1clayd.click"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE"
-      short-id: "42426c882c5fcd41"
-  - name: "🇷🇺 俄罗斯 01"
-    type: "vless"
-    server: "72.56.38.83"
+    password: "23c82941-70f4-4381-90db-bd28e9a902e9"
+    skip-cert-verify: true
+    sni: "steel7.hadsvpn.com"
+  - name: "🇩🇪 德国 01"
+    type: "hysteria2"
+    server: "3.69.232.199"
     port: 443
     udp: true
-    uuid: "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "absolute-disaster.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "ZzIetLcQtENjIXQ9XZqFo8p3J81p8Emj0wi51Uy07n8"
-  - name: "🇯🇵 日本 01"
+    password: "H7mP2xY9kJ4nQ8wR5tF6vB3z"
+    skip-cert-verify: true
+    sni: "vpn-de-002.fastervpn.world"
+  - name: "🇫🇮 芬兰 01"
+    type: "hysteria2"
+    server: "177.202.65.158"
+    port: 443
+    udp: true
+    password: "247802ca-0fbb-428a-b807-91a6e571b5c7"
+    skip-cert-verify: true
+    sni: "hy2-fi2.snobvpn.online"
+    obfs: "salamander"
+    obfs-password: "AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE"
+  - name: "🇵🇱 波兰 01"
+    type: "hysteria2"
+    server: "201.58.190.235"
+    port: 443
+    udp: true
+    password: "247802ca-0fbb-428a-b807-91a6e571b5c7"
+    skip-cert-verify: true
+    sni: "hy2-pl.snobvpn.online"
+    obfs: "salamander"
+    obfs-password: "sFQIE4F3SbaXCYoCQTY-4YvYiif8__By"
+  - name: "🇯🇵 日本 02"
     type: "ss"
     server: "84.247.155.196"
     port: 443
@@ -137,33 +146,39 @@ proxy-groups:
     type: "select"
     proxies:
       - "自动"
+      - "🇯🇵 日本 01"
       - "🇰🇷 韩国 01"
+      - "🇭🇰 香港 01"
+      - "🇰🇷 韩国 02"
       - "🇸🇬 新加坡 01"
       - "🇸🇬 新加坡 02"
-      - "🇰🇷 韩国 02"
-      - "🇭🇰 香港 01"
-      - "🇭🇰 香港 02"
-      - "🇸🇬 新加坡 03"
-      - "🌐 其他 01"
-      - "🌐 其他 01"
-      - "🇷🇺 俄罗斯 01"
-      - "🇯🇵 日本 01"
+      - "🇳🇱 荷兰 01"
+      - "🇳🇱 荷兰 02"
+      - "🇺🇸 美国 01"
+      - "🇺🇸 美国 02"
+      - "🇩🇪 德国 01"
+      - "🇫🇮 芬兰 01"
+      - "🇵🇱 波兰 01"
+      - "🇯🇵 日本 02"
   - name: "自动"
     type: "url-test"
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 80
     proxies:
+      - "🇯🇵 日本 01"
       - "🇰🇷 韩国 01"
+      - "🇭🇰 香港 01"
+      - "🇰🇷 韩国 02"
       - "🇸🇬 新加坡 01"
       - "🇸🇬 新加坡 02"
-      - "🇰🇷 韩国 02"
-      - "🇭🇰 香港 01"
-      - "🇭🇰 香港 02"
-      - "🇸🇬 新加坡 03"
-      - "🌐 其他 01"
-      - "🌐 其他 01"
-      - "🇷🇺 俄罗斯 01"
-      - "🇯🇵 日本 01"
+      - "🇳🇱 荷兰 01"
+      - "🇳🇱 荷兰 02"
+      - "🇺🇸 美国 01"
+      - "🇺🇸 美国 02"
+      - "🇩🇪 德国 01"
+      - "🇫🇮 芬兰 01"
+      - "🇵🇱 波兰 01"
+      - "🇯🇵 日本 02"
 rules:
   - "MATCH,选择"
