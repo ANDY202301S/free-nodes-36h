@@ -17,162 +17,134 @@ proxies:
     network: "tcp"
     sni: "connectgraduateswithjobopeningsandgrowprofessionally.com"
     skip-cert-verify: true
-  - name: "🇸🇬 新加坡 01"
-    type: "hysteria2"
-    server: "54.179.113.70"
-    port: 443
-    udp: true
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    skip-cert-verify: true
-    sni: "vpn-sg-001.fastervpn.world"
   - name: "🇭🇰 香港 01"
-    type: "hysteria2"
-    server: "24.233.8.109"
-    port: 443
+    type: "vless"
+    server: "8.217.1.203"
+    port: 8443
     udp: true
-    password: "8294f130408299df8cab08c80bf6f819"
-    skip-cert-verify: true
-    sni: "www.bing.com"
-    obfs: "salamander"
-    obfs-password: "c8827ab99e316c5bd414e21afa915ddf"
-  - name: "🇸🇬 新加坡 02"
-    type: "trojan"
-    server: "15.235.184.127"
-    port: 443
-    udp: true
-    password: "0ab6c98dae3b48e8b9c4a776b6c9c19a"
+    uuid: "8b17beac-b143-447d-aa68-14cbb121a602"
     network: "tcp"
-    sni: "exploredigitaljobplatformandfindonlinework.com"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "74P0QFvaK6B13rHsxR_t0lqRlg4YLuORD4VaHr5Jd38"
+      short-id: "0bf55f64"
   - name: "🇯🇵 日本 01"
+    type: "hysteria2"
+    server: "129.225.181.46"
+    port: 8443
+    udp: true
+    password: "oracle_hy2_pass_2026"
+    skip-cert-verify: true
+    sni: "bing.com"
+  - name: "🇫🇷 法国 01"
+    type: "vless"
+    server: "163.245.42.87"
+    port: 443
+    udp: true
+    uuid: "b9bfa54d-bc44-4592-a6d6-89a9665d286f"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "mother-earth.fyi"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+  - name: "🇫🇷 法国 02"
+    type: "vless"
+    server: "edge.bookmai.com"
+    port: 443
+    udp: true
+    uuid: "b9bfa54d-bc44-4592-a6d6-89a9665d286f"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "mother-earth.fyi"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+  - name: "🇷🇺 俄罗斯 01"
+    type: "vless"
+    server: "5.129.202.80"
+    port: 443
+    udp: true
+    uuid: "7ad63b26-bf70-4872-8fab-ebaf73a1e19d"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "mirror-50.topp-con.xyz"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8"
+      short-id: "2ef2b10d5143d798"
+  - name: "🌐 其他 01"
+    type: "vless"
+    server: "196.196.148.63"
+    port: 443
+    udp: true
+    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    network: "grpc"
+    tls: true
+    servername: "717252g.nl8.h1clayd.click"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU"
+      short-id: "d3bd772514c87d28"
+    grpc-opts:
+      grpc-service-name: "204adda7e3da"
+  - name: "🌐 其他 01"
+    type: "vless"
+    server: "196.196.149.80"
+    port: 443
+    udp: true
+    uuid: "4201786b-d99b-4147-a5f0-20d47acddb81"
+    network: "tcp"
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "7aa271t.es1.h1clayd.click"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE"
+      short-id: "42426c882c5fcd41"
+  - name: "🇯🇵 日本 02"
+    type: "ss"
+    server: "149.22.87.241"
+    port: 443
+    udp: true
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+  - name: "🇯🇵 日本 03"
+    type: "ss"
+    server: "149.22.87.204"
+    port: 443
+    udp: true
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+  - name: "🇯🇵 日本 04"
     type: "ss"
     server: "84.247.155.196"
     port: 80
     udp: true
     cipher: "aes-256-gcm"
     password: "3eOFeNssde7PYYMv"
-  - name: "🇯🇵 日本 02"
-    type: "vless"
-    server: "zfapi.zalolink.com"
-    port: 30322
-    udp: true
-    uuid: "57beeeb0-03fc-4fc9-94da-7604488a7134"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "psstatic.cdn.bcebos.com"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo"
-      short-id: "6a60e7e382d6"
-  - name: "🇭🇰 香港 02"
-    type: "hysteria2"
-    server: "152.32.254.68"
-    port: 5010
-    udp: true
-    password: "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ"
-    skip-cert-verify: true
-    sni: "nas.aizhzo.com"
-    obfs: "salamander"
-    obfs-password: "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
-  - name: "🇸🇬 新加坡 03"
-    type: "vless"
-    server: "win2loxfde0202.gggrelay.org"
-    port: 30322
-    udp: true
-    uuid: "57beeeb0-03fc-4fc9-94da-7604488a7134"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "psstatic.cdn.bcebos.com"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo"
-      short-id: "6a60e7e382d6"
-  - name: "🇭🇰 香港 03"
-    type: "trojan"
-    server: "47.242.93.89"
-    port: 12012
-    udp: true
-    password: "12012"
-    network: "tcp"
-    sni: "ali-hk.b-gfw.cfd"
-    skip-cert-verify: true
-  - name: "🇯🇵 日本 03"
-    type: "vless"
-    server: "zfapi.zalolink.com"
-    port: 54528
-    udp: true
-    uuid: "57beeeb0-03fc-4fc9-94da-7604488a7134"
-    network: "tcp"
-    tls: true
-    flow: "xtls-rprx-vision"
-    servername: "www.apple.com"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo"
-      short-id: "54cca3c1c1c7"
-  - name: "🇳🇱 荷兰 01"
-    type: "hysteria2"
-    server: "195.63.128.21"
-    port: 10444
-    udp: true
-    password: "fa937345-6d3e-4ff4-8127-1a836987a0db"
-    skip-cert-verify: true
-    sni: "germany.cloudhouse1.ru"
-  - name: "🇺🇸 美国 01"
-    type: "trojan"
-    server: "sclass-01.catcat321.com"
-    port: 20103
-    udp: true
-    password: "d7563108-615c-4338-a7bd-77f359869a4a"
-    network: "tcp"
-    sni: "hk.catxstar.com"
-  - name: "🌐 其他 01"
-    type: "hysteria2"
-    server: "94.183.164.119"
-    port: 24433
-    udp: true
-    password: "549766c3-fa5f-471e-8031-ffc1f8d5064f"
-    skip-cert-verify: true
-    sni: "lakes.blog-forme.ru"
-  - name: "🇮🇱 以色列 01"
-    type: "hysteria2"
-    server: "129.159.156.109"
-    port: 50160
-    udp: true
-    password: "f25f19f29ce3fb53a35bf1b35b452a43"
-    skip-cert-verify: true
-    sni: "www.bing.com"
-  - name: "🇹🇷 土耳其 01"
-    type: "hysteria2"
-    server: "panel.autonetshop.ir"
-    port: 43345
-    udp: true
-    password: "d1gkicdgem3bsoaa"
-    skip-cert-verify: true
-    sni: "panel.autonetshop.ir"
-    obfs: "salamander"
-    obfs-password: "km9oqmefh2km1i5n"
 proxy-groups:
   - name: "选择"
     type: "select"
     proxies:
       - "自动"
       - "🇰🇷 韩国 01"
-      - "🇸🇬 新加坡 01"
       - "🇭🇰 香港 01"
-      - "🇸🇬 新加坡 02"
       - "🇯🇵 日本 01"
-      - "🇯🇵 日本 02"
-      - "🇭🇰 香港 02"
-      - "🇸🇬 新加坡 03"
-      - "🇭🇰 香港 03"
-      - "🇯🇵 日本 03"
-      - "🇳🇱 荷兰 01"
-      - "🇺🇸 美国 01"
+      - "🇫🇷 法国 01"
+      - "🇫🇷 法国 02"
+      - "🇷🇺 俄罗斯 01"
       - "🌐 其他 01"
-      - "🇮🇱 以色列 01"
-      - "🇹🇷 土耳其 01"
+      - "🌐 其他 01"
+      - "🇯🇵 日本 02"
+      - "🇯🇵 日本 03"
+      - "🇯🇵 日本 04"
   - name: "自动"
     type: "url-test"
     url: "https://www.gstatic.com/generate_204"
@@ -180,19 +152,15 @@ proxy-groups:
     tolerance: 80
     proxies:
       - "🇰🇷 韩国 01"
-      - "🇸🇬 新加坡 01"
       - "🇭🇰 香港 01"
-      - "🇸🇬 新加坡 02"
       - "🇯🇵 日本 01"
-      - "🇯🇵 日本 02"
-      - "🇭🇰 香港 02"
-      - "🇸🇬 新加坡 03"
-      - "🇭🇰 香港 03"
-      - "🇯🇵 日本 03"
-      - "🇳🇱 荷兰 01"
-      - "🇺🇸 美国 01"
+      - "🇫🇷 法国 01"
+      - "🇫🇷 法国 02"
+      - "🇷🇺 俄罗斯 01"
       - "🌐 其他 01"
-      - "🇮🇱 以色列 01"
-      - "🇹🇷 土耳其 01"
+      - "🌐 其他 01"
+      - "🇯🇵 日本 02"
+      - "🇯🇵 日本 03"
+      - "🇯🇵 日本 04"
 rules:
   - "MATCH,选择"
